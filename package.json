@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/mike-north/vscode-fundamentals#readme",
   "dependencies": {
+    "babel-runtime": "^6.26.0",
     "commander": "^2.11.0",
+    "debug": "^3.0.1",
     "koa": "^2.3.0",
     "koa-bodyparser": "^4.2.0",
     "koa-mount": "^3.0.0",

@@ -51,7 +51,6 @@ router.post("/", async function(ctx, next) {
       await CartItem.destroy({
         truncate: true
       });
-      console.log(order.id);
       order = await Order.find({
         where: { id: order.id },
         include: [
@@ -67,14 +66,12 @@ router.post("/", async function(ctx, next) {
           }
         ]
       });
-      console.log(order.get);
       let payload = { data: order.get({ plain: true }) };
-      console.log( payload );
       ctx.body = payload;
     } catch (err) {
       ctx.body = { error: `Problem placing order: ${err}` };
     }
-  }).catch(e => console.log(e));
+  }).catch(e => console.error(e));
 });
 
 export default router;

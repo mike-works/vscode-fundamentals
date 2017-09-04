@@ -47,7 +47,6 @@ router
       let results = await Order.findAll(queryOptions);
 
       let plainResults = results.map(x => x.get({ plain: true }));
-      console.log({ plainResults });
 
       ctx.body = { data: plainResults };
     } catch (err) {

@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const chalk = require('chalk');
 const dbModels = require('./models');
-
+const debug = require('debug')('fegrocer:db');
 const PROJECT_ROOT_PATH = path.join(__dirname, '..');
 
 function dbPath(name) {
@@ -25,6 +25,7 @@ async function openDb(name) {
           min: 0,
           idle: 10000
         },
+        logging: (x) => debug(x),
         storage: databasePath
       });
       resolve(sequelize);
