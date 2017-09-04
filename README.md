@@ -125,7 +125,7 @@ This is a free-standing client/server system, including
 
 * A database
 * A REST API
-* A web client, which starts out as a conventional single-page app, and becomes a progressive web app you progress through the workshop
+* A single-page-app web client
 
 ````
  Project
