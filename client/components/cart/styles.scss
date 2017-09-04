@@ -1,0 +1,37 @@
+.cart {
+  .cart-items {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .checkout-btn-container {
+    margin: 10px;
+
+    .confirm-btn,
+    .cancel-btn {
+      width: calc(50% - 5px);
+    }
+  }
+
+  .checkout-btn {
+    background: green;
+    width: calc(100%);
+    font-weight: bolder;
+
+    .amt {
+      padding: 2px 5px;
+      border-radius: 2px;
+      border: 1px solid lightgreen;
+      background: darken(desaturate(green, 20%), 10%);
+    }
+  }
+
+  .checkout-confirm {
+    max-height: 0;
+    overflow: hidden;
+
+    &.open {
+      max-height: none;
+    }
+  }
+}

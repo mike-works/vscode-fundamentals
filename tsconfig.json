@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "jsx": "react",
+    "module": "commonjs",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "paths": {
+      "koa-webpack-middleware": [
+        "node_modules/koa-webpack-middleware/middleware/index"
+      ],
+      "muicss": [
+        "node_modules/muicss/lib/react/*"
+      ],
+      "moment": [
+        "node_modules/moment/moment"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "server.js"
+  ]
+}

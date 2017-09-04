@@ -1,0 +1,35 @@
+@import 'mui';
+@import 'sass/variables';
+
+html,
+body {
+  background-color: $offwhite;
+  height: 100%;
+}
+
+html,
+body,
+input,
+textarea,
+button {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.badge {
+  padding: 3px 5px;
+  background: slategray;
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-radius: 3px;
+  line-height: 0.8rem;
+}

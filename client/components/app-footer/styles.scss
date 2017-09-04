@@ -1,0 +1,30 @@
+@import './../../sass/variables';
+@import './../../sass/mixins';
+
+.footer {
+  background-color: $theme-background;
+  bottom: 0;
+  color: #fff;
+  height: 20px;
+  left: 0;
+  position: fixed;
+  transition: transform 0.2s;
+  width: 100%;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  @include large-screens {
+    transform: translateX(0);
+
+    .frontend-grocer.show-left-sidedrawer & {
+      transform: translateX($sidedrawer-width);
+    }
+
+    .frontend-grocer.show-right-sidedrawer & {
+      transform: translateX(-$sidedrawer-width);
+    }
+  }
+}

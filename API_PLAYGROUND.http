@@ -1,0 +1,73 @@
+##############################
+# GROCERY ITEM CATEGORIES
+##############################
+
+GET http://localhost:3000/api/grocery/categories
+
+##############################
+# GROCERY ITEMS
+##############################
+
+GET http://localhost:3000/api/grocery/items
+
+###
+# By default this returns 10 items, but we can ask for more with the limit queryparam
+
+GET http://localhost:3000/api/grocery/items?limit=2
+
+###
+# Or "offset" the list of results (i.e., for pagination)
+
+GET http://localhost:3000/api/grocery/items?offset=10
+
+###
+# We can also filter by category
+
+GET http://localhost:3000/api/grocery/items?category=fruit
+
+
+##############################
+# CURRENT SHOPPING CART
+##############################
+
+###
+# You can set the contents of your shopping cart as follows.
+
+PUT http://localhost:3000/api/cart/items HTTP/1.1
+content-type: application/json
+
+{"data":
+  [
+    {"groceryItem": { "id": 132 }, "qty": 9},
+    {"groceryItem": { "id": 134 }, "qty": 2},
+    {"groceryItem": { "id": 118 }, "qty": 1}
+  ]
+}
+
+##############################
+# ORDER
+##############################
+
+###
+# Get a collection of orders in the system
+
+GET http://localhost:3000/api/orders HTTP/1.1
+
+###
+# Get a a single orders in the system by ID
+GET http://localhost:3000/api/orders/1 HTTP/1.1
+
+###
+# Create a new order. This will result in all cart items being removed
+# and a new order being created (and returned)
+
+POST http://localhost:3000/api/order HTTP/1.1
+content-type: application/json
+
+{"data":
+  [
+    {"groceryItem": { "id": 132 }, "qty": 9},
+    {"groceryItem": { "id": 134 }, "qty": 2},
+    {"groceryItem": { "id": 118 }, "qty": 1}
+  ]
+}

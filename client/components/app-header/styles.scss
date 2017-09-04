@@ -1,0 +1,96 @@
+@import './../../sass/variables';
+@import './../../sass/mixins';
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  transform: translateX(0);
+  transition: transform 0.2s;
+
+  .qr-input {
+    display: none;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  a:hover,
+  a:focus,
+  a:visited {
+    text-decoration: none;
+  }
+
+  .cart-item-count-badge {
+    background: red;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: block;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .appbar-icon {
+    margin-right: 15px;
+
+    &:last-of-type {
+      margin-right: 5px;
+    }
+
+    svg {
+      position: relative;
+      top: 2px;
+
+      @include large-screens {
+        top: 5px;
+      }
+    }
+  }
+
+  .appbar-icon,
+  .sidedrawer-toggle {
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 43px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    transition: background-color 0.2s;
+
+    &:hover {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+    }
+  }
+
+  .logo {
+    position: relative;
+    top: 2px;
+  }
+
+  @include large-screens {
+    transform: translateX(0);
+
+    .frontend-grocer.show-left-sidedrawer & {
+      transform: translateX($sidedrawer-width);
+    }
+
+    .frontend-grocer.show-right-sidedrawer & {
+      transform: translateX(-$sidedrawer-width);
+    }
+  }
+}

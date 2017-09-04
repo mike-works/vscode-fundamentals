@@ -1,0 +1,27 @@
+import * as ExtractTextPlugin from "extract-text-webpack-plugin";
+
+import extractSass from './extract-sass';
+
+export default {
+  loaders: [
+    // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
+    { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+
+    // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+    { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
+    {
+      test: /\.scss$/,
+      use: extractSass.extract({
+        fallback: 'style-loader',
+        use: [{
+          loader: 'css-loader'
+        }, {
+          loader: 'sass-loader',
+          options: {
+            includePaths: ['node_modules/muicss/lib/sass']
+          }
+        }]
+      })
+    }
+  ]
+};

@@ -1,0 +1,113 @@
+import * as React from 'react';
+
+import './sass/content-wrapper.scss';
+
+import Home from './routes/home/index';
+
+import SideDrawer from './components/side-drawer/index';
+import AppHeader from './components/app-header/index';
+import AppFooter from './components/app-footer/index';
+import Cart from './components/cart/index';
+import Orders from './components/orders/index';
+
+import * as Container from 'muicss/lib/react/container';
+
+import CartStore from './data/cart-store';
+import GroceryItemStore from './data/grocery-item-store';
+import OrderStore from './data/order-store';
+
+interface IAppState {
+  drawerShowing : String
+  cartItems: ReadonlyArray<any>
+  orders: ReadonlyArray<any>
+}
+
+class App extends React.Component<any, IAppState> {
+
+  cartStore = new CartStore()
+  groceryItemStore = new GroceryItemStore()
+  orderStore = new OrderStore()
+  
+  homeRoute : React.SFC<any> = null;
+
+  constructor(props) {
+    super(props);
+    
+    this.cartStore.itemListeners.register((newItems) => {
+      this.setState({cartItems: newItems});
+    });
+
+    this.orderStore.orderListeners.register((newItems) => {
+      this.setState({orders: newItems});
+    });
+
+    this.state = {
+      drawerShowing: null,
+      cartItems: this.cartStore.items,
+      orders: this.orderStore.orders
+    };
+    this.toggleLeftDrawer = this.toggleLeftDrawer.bind(this);
+    this.toggleRightDrawer = this.toggleRightDrawer.bind(this);
+    this.closeAllDrawers = this.closeAllDrawers.bind(this);
+
+    this.homeRoute = (props) => (
+      <Home
+        cartStore={this.cartStore}
+        groceryItemStore={this.groceryItemStore}
+        {...props} />
+    );
+  }
+
+  toggleLeftDrawer() {
+    let oldState = this.state.drawerShowing;
+    this.setState({ drawerShowing: oldState === 'left' ? null : 'left' });
+  }
+
+  toggleRightDrawer() {
+    let oldState = this.state.drawerShowing;
+    this.setState({ drawerShowing: oldState === 'right' ? null : 'right' });
+  }
+
+  closeAllDrawers() {
+    this.setState({ drawerShowing: null });
+  }
+
+  render() {
+    let wrapperClassNames = ['frontend-grocer'];
+    if (this.state.drawerShowing === 'left') wrapperClassNames.push('show-left-sidedrawer');
+    if (this.state.drawerShowing === 'right') wrapperClassNames.push('show-right-sidedrawer');
+    return (
+        <div className={wrapperClassNames.join(' ')}>
+          <SideDrawer side={'left'} drawerShowing={this.state.drawerShowing === 'left'}>
+            <div className="brand mui--appbar-line-height">
+              <span className="mui--text-title">📦 Orders</span>
+            </div>
+            <div className="mui-divider"></div>
+            <Orders orders={this.state.orders}/>
+          </SideDrawer>
+          <SideDrawer side={'right'} drawerShowing={this.state.drawerShowing === 'right'}>
+            <div className="brand mui--appbar-line-height">
+              <span className="mui--text-title">🛒 Cart</span>
+            </div>
+            <div className="mui-divider"></div>
+            <Cart cartStore={this.cartStore} orderStore={this.orderStore} cartItems={this.state.cartItems} />
+          </SideDrawer>
+          <AppHeader
+            numItemsInCart={this.state.cartItems.length}
+            doLeftToggle={this.toggleLeftDrawer} doRightToggle={this.toggleRightDrawer}></AppHeader>
+          <div className="content-wrapper">
+            <div className="mui--appbar-height"></div>
+            <Container fluid={true}>
+              <Home groceryItemStore={this.groceryItemStore} cartStore={this.cartStore}/>
+            </Container>
+          </div>
+          <AppFooter></AppFooter>
+          {this.state.drawerShowing
+            ? <div id="mui-overlay" onClick={this.closeAllDrawers}></div>
+            : ''}
+        </div>
+    );
+  }
+}
+
+export default App;

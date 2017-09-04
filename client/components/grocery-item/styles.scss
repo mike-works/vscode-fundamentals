@@ -1,0 +1,75 @@
+@import '../../sass/variables';
+
+$bottom-tile-height: 36px;
+
+.GroceryItem {
+  display: inline-block;
+  height: $grocery-item-tile-height;
+  width: $grocery-item-tile-width;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+
+  &:first-child {
+    margin-left: -20px;
+  }
+
+  .item-image {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    max-width: 90%;
+  }
+
+  .bottom-tile {
+    position: absolute;
+    bottom: 0;
+    height: $bottom-tile-height;
+    line-height: $bottom-tile-height;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+
+    &.bottom-tile--right {
+      right: 0;
+      border-top-left-radius: 3px;
+    }
+
+    &.bottom-tile--left {
+      left: 0;
+      border-top-right-radius: 3px;
+    }
+  }
+
+  &:hover .bottom-tile {
+    opacity: 1;
+  }
+
+  .item-price {
+    background: green;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 0 5px;
+
+    .item-unit {
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-left: 4px;
+    }
+  }
+
+  .item-name {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    white-space: normal;
+  }
+
+  .add-item-to-cart {
+    margin-bottom: 0;
+    padding: 0 10px;
+    font-size: $bottom-tile-height;
+  }
+}
