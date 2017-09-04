@@ -98,29 +98,30 @@ npm install -g <package-name>
 
 #### Project setup
 
+First, clone this project from Github
+
+```
+git clone https://github.com/mike-north/vscode-fundamentals vscode
+cd vscode
+```
+
 Finally, while in the top-level folder of this project, download the and install this project's dependencies by running
 
 ```
 yarn
 ```
 
-We'll also need some certificates so we can run a development webserver over HTTPS. You can generate them by running
+To start the app, run
 
 ```
-npm run prepcerts
+npm start
 ```
 
-To start the server, run
-
-```
-./run serve
-```
-
-(Pro tip: If everything looks like it works, but you can't access the page in your browser, make sure you're using *HTTPS*. Try [https://localhost:3000/](https://localhost:3000/).)
+and you should see something on `http://localhost:3000`
 
 # Files and Folders
 
-This is a free-standing client/server Progressive Web App system, including
+This is a free-standing client/server system, including
 
 * A database
 * A REST API
@@ -129,7 +130,7 @@ This is a free-standing client/server Progressive Web App system, including
 ````
  Project
  │
- ├─ client/            📱 React.js web client
+ ├─ client/            📱 React web client
  │  ├─ components/     📊 React components
  │  │  │
  │  │  ├─ my-thing/index.jsx        Component implementation
@@ -149,50 +150,18 @@ This is a free-standing client/server Progressive Web App system, including
  └─ .vapid.json        🔐 VAPID private and public keys
 ````
 
-# How to use it
-
-#### Generate x509 Certificates for serving over HTTPS
-
-`npm run prepcerts`
-
-#### Start the Development Server
-`./run serve`
-
-or in HTTP/2 mode (requires a development or production build, and does not watch for changes)
-
-`./run serve --http2`
-
-#### Build Development Assets in the `/dist` folder
-This will be an un-minified version of an exercise, and will include some webpack-specific tooling, intended only for development use
-
-`npm run build:dev`
-
-#### Build Production Assets in the `/dist` folder
-This will be an an optimized version of the exercise
-
-`npm run build:dist`
-
-#### Run tests
-
-`npm test`
-
-#### Clean old builds
-
-`npm run clean`
-
 # What are the pieces?
 
 * [Webpack 3](https://webpack.js.org)
 * [Babel](http://babeljs.io/) 7.x, setup with the [babel-preset-env](https://github.com/babel/babel/tree/7.0/packages/babel-preset-env) plugins, compiling to ES5 JavaScript
-* [ESLint](https://github.com/eslint/eslint) for linting JS and JSX
+* [TSLint](https://palantir.github.io/tslint/) for linting TypeScript
 * [sass-loader](https://github.com/webpack-contrib/sass-loader) for traditional management of [Sass](http://sass-lang.com/) styles
 * [extract-text-webpack-plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin) so compiled styles are external stylesheets instead of inline style blocks
 * [React](http://facebook.github.io/react/) as a component library
 * [MUI](https://www.muicss.com/) as a lightweight (6.6K) Material Design inspired UI kit
 * [Jest](http://facebook.github.io/jest/) as a testing platform
-* [SimpleHTTP2Server](https://github.com/GoogleChrome/simplehttp2server) as a HTTP/2 proxy (for development only)
 * [SQLite3](https://www.sqlite.org/) - as a lightweight, embedded database (for API)
-* [Express](http://expressjs.com/) - as a HTTP server for our API.
+* [Koa](http://koajs.com/) - as a HTTP server for our API.
 
 # License
 While the general license for this project is the BSD 3-clause, the exercises
@@ -220,7 +189,7 @@ exercises contained within this project to run your own workshops
 
 # Copyright
 
-&copy; 2017 [Mike Works, Inc.](https://mike.works) and [Steve Kinney](http://www.stevekinney.net), All Rights Reserved
+&copy; 2017 [Mike Works, Inc.](https://mike.works), All Rights Reserved
 
 ###### This material may not be used for workshops, training, or any other form of instructing or teaching developers, without express written consent
 
