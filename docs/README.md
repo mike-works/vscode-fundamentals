@@ -55,3 +55,17 @@
 > ⏩ Doesn't require a week of tweaking/config to get "right"
 
 > 🚢 Shipping new features at an incredible rate!
+
+<br><br><br><br>
+
+#### How this course is going to work
+
+> Agenda is as follows
+>  1. [Using It](./1_using/)
+>  2. [Customizing It](./2_customizing/)
+>  3. [Extending It](./3_extending/)
+
+> New code editing tricks (i.e. `⌘ + D` along the way)
+
+> We'll be working with JavaScript *and* typescript.
+>   - It's OK (maybe even better) if you don't know TS yet

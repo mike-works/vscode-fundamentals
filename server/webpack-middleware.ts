@@ -1,5 +1,4 @@
 import * as webpack from 'webpack';
-import * as middleware from 'koa-webpack';
 import { devMiddleware, hotMiddleware } from 'koa-webpack-middleware';
 import devConfig from '../webpack.config.dev';
 
