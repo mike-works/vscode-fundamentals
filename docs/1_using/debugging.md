@@ -1,6 +1,6 @@
-[< Back to Home](../)
-<img align='right' height=74 src='../../public/vscode.jpg'>
-# Using Visual Studio Code: Debugging
+<img align='right' height=100 src='../../public/vscode.jpg'>
+
+## Using Visual Studio Code: Debugging
 
 * **Debugging**
 * [Launch Configuration](./launch-configuration.md)
