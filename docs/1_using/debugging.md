@@ -7,13 +7,4 @@
 
 ---
 
-
-
-
----
-#### STUDENT NOTES
----
-```
-(write some notes here, and commit)
-
-```
+#

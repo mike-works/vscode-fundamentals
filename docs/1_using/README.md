@@ -2,5 +2,7 @@
 
 ## Using Visual Studio Code
 
-* [Debugging](./debugging.md)
-* [Launch Configuration](./launch-configuration.md)
+* 📄 [Awesome Documents](./markdown.md)
+* 🐞 [Debugging](./debugging.md)
+* 🚀 [Launch Configuration](./launch-configuration.md)
+* ✅ [Type-Checking](./type-checking.md)
