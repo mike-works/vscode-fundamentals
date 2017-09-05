@@ -4,7 +4,13 @@
   "description": "Mike Works, Inc. Visual Studio Code Course",
   "main": "./server/index.js",
   "scripts": {
+    "build:server": "npm run build-ts && npm run tslint && npm run copy-static-assets",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "build-ts": "tsc",
+    "copy-static-assets": "echo 'copy static assets'",
     "start": "./node_modules/.bin/ts-node ./server/index.ts",
+    "debug": "./node_modules/.bin/ts-node debug ./server/index.ts",
+    "debug:attach": "./node_modules/.bin/ts-node --inspect ./server/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -42,8 +48,10 @@
     "@types/extract-text-webpack-plugin": "^2.1.0",
     "@types/html-webpack-plugin": "^2.28.0",
     "@types/koa": "^2.0.39",
+    "@types/koa-bodyparser": "^3.0.24",
     "@types/koa-mount": "^2.0.18",
     "@types/koa-router": "^7.0.22",
+    "@types/koa-static": "^3.0.1",
     "@types/moment": "^2.13.0",
     "@types/react": "^16.0.2",
     "@types/react-dom": "^15.5.3",

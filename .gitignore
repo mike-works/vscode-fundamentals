@@ -1,3 +1,5 @@
+dist
+dist-server
 node_modules
 yarn-error*
 db/development.sqlite

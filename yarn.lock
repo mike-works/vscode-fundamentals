@@ -56,6 +56,12 @@
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@types/keygrip/-/keygrip-1.0.1.tgz#ff540462d2fb4d0a88441ceaf27d287b01c3d878"
 
+"@types/koa-bodyparser@^3.0.24":
+  version "3.0.24"
+  resolved "https://registry.yarnpkg.com/@types/koa-bodyparser/-/koa-bodyparser-3.0.24.tgz#ff956690064c54cd7fceff2188c41770b3bc3b0c"
+  dependencies:
+    "@types/koa" "*"
+
 "@types/koa-compose@*":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@types/koa-compose/-/koa-compose-3.2.2.tgz#dc106e000bbf92a3ac900f756df47344887ee847"
@@ -69,6 +75,12 @@
 "@types/koa-router@^7.0.22":
   version "7.0.22"
   resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.0.22.tgz#92b4b533f074036250892fe35bb6329ee9242def"
+  dependencies:
+    "@types/koa" "*"
+
+"@types/koa-static@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/koa-static/-/koa-static-3.0.1.tgz#cb299b8c92fcdfb233f85866f88b6b126d5ee5e7"
   dependencies:
     "@types/koa" "*"
 
