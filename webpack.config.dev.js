@@ -1,7 +1,8 @@
-import plugins from './webpack/plugins';
-import module from './webpack/module';
-import * as webpack from 'webpack';
-export default <webpack.Configuration> {
+const plugins = require('./webpack/plugins');
+const mod = require('./webpack/module');
+const webpack = require('webpack');
+
+module.exports = {
   entry: {
     app: [
       './client/index.tsx'
@@ -22,6 +23,6 @@ export default <webpack.Configuration> {
     stats: 'minimal',
   },
   stats: 'minimal',
-  module,
+  module: mod,
   plugins
 };

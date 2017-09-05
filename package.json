@@ -4,13 +4,9 @@
   "description": "Mike Works, Inc. Visual Studio Code Course",
   "main": "./server/index.js",
   "scripts": {
-    "build:server": "npm run build-ts && npm run tslint && npm run copy-static-assets",
-    "tslint": "tslint -c tslint.json -p tsconfig.json",
-    "build-ts": "tsc",
-    "copy-static-assets": "echo 'copy static assets'",
-    "start": "./node_modules/.bin/ts-node ./server/index.ts",
-    "debug": "./node_modules/.bin/ts-node debug ./server/index.ts",
-    "debug:attach": "./node_modules/.bin/ts-node --inspect ./server/index.ts",
+    "start": "node ./server/index.js",
+    "debug": "node debug ./server/index.js",
+    "debug:inspect": "node --inspect --inspect-brk ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -31,6 +27,7 @@
   },
   "homepage": "https://github.com/mike-north/vscode-fundamentals#readme",
   "dependencies": {
+    "@types/moment": "^2.13.0",
     "babel-runtime": "^6.26.0",
     "commander": "^2.11.0",
     "debug": "^3.0.1",
@@ -39,7 +36,6 @@
     "koa-mount": "^3.0.0",
     "koa-router": "^7.2.1",
     "koa-static": "^4.0.1",
-    "moment": "^2.18.1",
     "sequelize": "^4.8.0",
     "sqlite3": "^3.1.9"
   },
@@ -52,7 +48,6 @@
     "@types/koa-mount": "^2.0.18",
     "@types/koa-router": "^7.0.22",
     "@types/koa-static": "^3.0.1",
-    "@types/moment": "^2.13.0",
     "@types/react": "^16.0.2",
     "@types/react-dom": "^15.5.3",
     "@types/webpack": "^3.0.9",

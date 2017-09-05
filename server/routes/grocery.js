@@ -1,5 +1,5 @@
-import * as Router from 'koa-router';
-import * as Db from '../db';
+const Router = require('koa-router');
+const Db = require('../db');
 
 let router = new Router();
 let _cachedCategories = null;
@@ -59,4 +59,4 @@ router
     }
   });
 
-export default router;
+  module.exports = router;

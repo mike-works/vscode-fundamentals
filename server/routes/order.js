@@ -1,6 +1,5 @@
-import * as Router from "koa-router";
-import * as Db from "../db";
-import * as moment from 'moment';
+const Router = require("koa-router");
+const Db = require("../db");
 
 let router = new Router();
 router.post("/", async function(ctx, next) {
@@ -40,9 +39,7 @@ router.post("/", async function(ctx, next) {
         })
       );
       
-      let orderName = `Order placed at ${moment(order.createdAt).format(
-        "ddd, MMM D YY, h:mm a"
-      )}`;
+      let orderName = `Order placed at ${(new Date(order.createdAt)).toISOString()}`;
       order = await order.update({
         name: orderName,
         totalPrice: 0.01 * Math.round(totalPrice * 100)
@@ -74,4 +71,4 @@ router.post("/", async function(ctx, next) {
   }).catch(e => console.error(e));
 });
 
-export default router;
+module.exports = router;

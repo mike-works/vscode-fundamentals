@@ -1,12 +1,12 @@
-import * as Koa from 'koa';
-import {dev as devMiddleware} from './webpack-middleware';
-import * as mount from 'koa-mount';
-import router from './router';
-import * as Db from './db';
-import * as koaStatic from 'koa-static';
-import * as bodyParser from 'koa-bodyparser';
+const Koa = require('koa');
+const {dev : devMiddleware} = require('./webpack-middleware');
+const mount = require('koa-mount');
+const router = require('./router');
+const Db = require('./db');
+const koaStatic = require('koa-static');
+const bodyParser = require('koa-bodyparser');
 
-import * as path from 'path';
+const path = require('path');
 
 const IMAGES_ROOT = 'server/images';
 

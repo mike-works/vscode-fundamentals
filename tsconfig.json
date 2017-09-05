@@ -9,14 +9,8 @@
     "baseUrl": ".",
     "allowJs": true,
     "paths": {
-      "koa-webpack-middleware": [
-        "node_modules/koa-webpack-middleware/middleware/index"
-      ],
       "muicss": [
         "node_modules/muicss/lib/react/*"
-      ],
-      "moment": [
-        "node_modules/moment/moment"
       ]
     }
   },

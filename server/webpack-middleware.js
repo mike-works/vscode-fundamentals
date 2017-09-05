@@ -1,10 +1,10 @@
-import * as webpack from 'webpack';
-import { devMiddleware, hotMiddleware } from 'koa-webpack-middleware';
-import devConfig from '../webpack.config.dev';
+const webpack = require('webpack');
+const { devMiddleware, hotMiddleware } = require('koa-webpack-middleware');
+const devConfig = require('../webpack.config.dev');
 
 const compiler = webpack(devConfig);
 
-export function dev() {
+function dev() {
   return devMiddleware(compiler, {
     // display no info to console (only warnings and errors)
     // noInfo: true,
@@ -34,10 +34,13 @@ export function dev() {
   });
 }
 
-export function hot() {
+function hot() {
   return hotMiddleware(compiler, {
     log: console.log,
     path: '/__webpack_hmr',
     // heartbeat: 10 * 1000
   });
 }
+
+
+module.exports = { dev, hot };

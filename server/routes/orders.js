@@ -1,5 +1,5 @@
-import * as Router from "koa-router";
-import * as Db from "../db";
+const Router = require("koa-router");
+const Db = require("../db");
 
 let router = new Router();
 router
@@ -82,4 +82,4 @@ router
     ctx.body = { data: plainResult };
   });
 
-export default router;
+module.exports = router;
