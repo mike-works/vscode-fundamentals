@@ -1,2 +1,3 @@
-[< Back to Home](../)
-# Extending Visual Studio Code
+<img align='right' height=74 src='../../public/vscode.jpg'>
+
+## Extending Visual Studio Code

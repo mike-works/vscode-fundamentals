@@ -1,2 +1,3 @@
-[< Back to Home](../)
-# Customizing Visual Studio Code
+<img align='right' height=74 src='../../public/vscode.jpg'>
+
+## Customizing Visual Studio Code

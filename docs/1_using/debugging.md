@@ -1,11 +1,19 @@
 [< Back to Home](../)
+<img align='right' height=74 src='../../public/vscode.jpg'>
 # Using Visual Studio Code: Debugging
 
 * **Debugging**
 * [Launch Configuration](./launch-configuration.md)
 
 ---
-<dl>
-  <dt>This is a list</dt>
-  <dd>With hanging indentation</dd>
-</dl>
+
+
+
+
+---
+#### STUDENT NOTES
+---
+```
+(write some notes here, and commit)
+
+```
