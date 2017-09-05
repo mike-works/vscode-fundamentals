@@ -11,6 +11,13 @@
       "sourceMaps": true,
       "port": 9229,
       "protocol": "inspector"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceRoot}"
     }
   ]
 }
