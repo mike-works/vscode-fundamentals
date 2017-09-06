@@ -10,11 +10,11 @@ Normal markdown images
 The HTML [`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) tag can be used as well. Many attributes will be respected in most markdown renderers (including GitHub)
 
 ```html
-<img src="../../public/vscode.png" height=100 align=right vspace=20/>
-<img src="../../public/vscode.png" height=100 align=top hspace=30/>
+<img src="../../public/vscode.png" height=50 align=right vspace=20/>
+<img src="../../public/vscode.png" height=100/>
 ```
-<img src="../../public/vscode.png" height=100 align=right vspace=20/>
-<img src="../../public/vscode.png" height=100 align=top hspace=30/>
+<img src="../../public/vscode.png" height=50 align=right vspace=20/>
+<img src="../../public/vscode.png" height=100/>
 
 
 ## Alignment
