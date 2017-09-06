@@ -1,22 +1,37 @@
-## HTML
 
-### Images
-![Corgi1](../../public/vscode.png)
-<img alt="Corgi1" src="../../public/vscode.png" height=200 align=right />
+## Images
 
-### Alignment
+Normal markdown images
+```md
+![VS Code](../../public/vscode.png)
+```
+![VS Code](../../public/vscode.png)
+
+The HTML [`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) tag can be used as well. Many attributes will be respected in most markdown renderers (including GitHub)
+
+```html
+<img src="../../public/vscode.png" height=100 align=top/>
+<img src="../../public/vscode.png" height=100 align=top vspace=20/>
+<img src="../../public/vscode.png" height=100 align=top hspace=15 vspace=30/>
+```
+<img src="../../public/vscode.png" height=100 align=top/>
+<img src="../../public/vscode.png" height=100 align=top vspace=20/>
+<img src="../../public/vscode.png" height=100 align=top hspace=15 vspace=30/>
+
+## Alignment
+
 > <p align=right>right ➡</p>
 > <p align=center>⬅ center ➡</p>
 > <p align=left>⬅ left</p>
 
-### [Description Lists](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) (`<dl>`)
+## [Description Lists](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) (`<dl>`)
 
 > <dl>
 >  <dt>This is a list</dt>
 >  <dd>With hanging indentation</dd>
 > </dl>
 
-### [Details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)/Summary
+## [Details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)/Summary
 
 > <details>
 >  <summary>Click me for something absolutely amazing</summary>
