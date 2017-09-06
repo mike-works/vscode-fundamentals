@@ -39,9 +39,13 @@ The `align` attribute can be used on a variety of HTML tags
 
 ```html
 ```
+<p align=bottom>
 <img src="../../public/vscode.png" height=50 align=top/>
-<img src="../../public/vscode.png" height=50 align=bottom/>
+<img src="../../public/vscode.png" height=50 align=right/>
 <img src="../../public/vscode.png" height=100/>
+</p>
+
+
 
 
 
