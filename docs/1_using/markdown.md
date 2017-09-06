@@ -16,7 +16,7 @@ The HTML [`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 > <img src="../../public/vscode.png" height=50 align=right vspace=20/>
 > <img src="../../public/vscode.png" height=100/>
 
-👉 Keep in mind that GitHub wraps images in 
+👉 Keep in mind that, in this case, GitHub wraps each image in 
 ```html
 <p>
   <a href="./myimage.jpg">
@@ -113,12 +113,42 @@ but, if you use HTML, you can fix this, and customize the list "type"
 
 ### [Description Lists](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) (`<dl>`)
 
+```html
+<dl>
+  <dt>Images</dt>
+  <dd>.jpg, .gif, .png</dd>
+  <dt>Styles</dt>
+  <dd>.css</dd>
+  <dt>Scripts</dt>
+  <dd>.js</dd>
+  <dt>Documents</dt>
+  <dd>.html</dd>
+</dl>
+```
+
 > <dl>
->  <dt>This is a list</dt>
->  <dd>With hanging indentation</dd>
+>   <dt>Images</dt>
+>   <dd>.jpg, .gif, .png</dd>
+>   <dt>Styles</dt>
+>   <dd>.css</dd>
+>   <dt>Scripts</dt>
+>   <dd>.js</dd>
+>   <dt>Documents</dt>
+>   <dd>.html</dd>
 > </dl>
 
 ## [Details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)/Summary
+
+````html
+<details>
+  <summary>Click me for something absolutely amazing</summary>
+
+```ts
+  let Hello : string = 'World';
+```
+</details>
+````
+
 
 > <details>
 >  <summary>Click me for something absolutely amazing</summary>
