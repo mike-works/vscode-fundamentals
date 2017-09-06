@@ -5,7 +5,7 @@ Normal markdown images
 ```md
 ![VS Code](../../public/vscode.png)
 ```
-![VS Code](../../public/vscode.png)
+> ![VS Code](../../public/vscode.png)
 
 The HTML [`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) tag can be used as well. Many attributes will be respected in most markdown renderers (including GitHub)
 
@@ -13,8 +13,8 @@ The HTML [`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 <img src="../../public/vscode.png" height=50 align=right vspace=20/>
 <img src="../../public/vscode.png" height=100/>
 ```
-<img src="../../public/vscode.png" height=50 align=right vspace=20/>
-<img src="../../public/vscode.png" height=100/>
+> <img src="../../public/vscode.png" height=50 align=right vspace=20/>
+> <img src="../../public/vscode.png" height=100/>
 
 👉 Keep in mind that GitHub wraps images in 
 ```html
@@ -37,24 +37,81 @@ The `align` attribute can be used on a variety of HTML tags
 > <p align=center>⬅ center ➡</p>
 > <p align=left>⬅ left</p>
 
+If you wrap multiple inline elements in a `<p>` tag, it's possible to do some interesting things with vertical `align` attribute values
+
 ```html
 <p>
-<img src="../../public/vscode.png" height=50 align=top />
-<img src="../../public/vscode.png" height=50 align=bottom />
-<img src="../../public/vscode.png" height=100/>
+  <img src="../../public/vscode.png" height=50 align=top />
+  <img src="../../public/vscode.png" height=50 align=bottom />
+  <img src="../../public/vscode.png" height=100/>
 </p>
 ```
-<p>
-<img src="../../public/vscode.png" height=50 align=top />
-<img src="../../public/vscode.png" height=50 align=bottom />
-<img src="../../public/vscode.png" height=100/>
-</p>
+> <p>
+>   <img src="../../public/vscode.png" height=50 align=top />
+>   <img src="../../public/vscode.png" height=50 align=bottom />
+>   <img src="../../public/vscode.png" height=100/>
+> </p>
 
 
 
+## Lists
 
+### Unordered Lists
 
-## [Description Lists](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) (`<dl>`)
+These can be nested to create a multi-level outline
+
+```md
+* one
+* two
+  * three
+    * four
+```
+> * one
+> * two
+>   * three
+>     * four
+
+### Ordered Lists
+
+These cannot be nested in most markdown rendering engines
+
+```md
+1. first
+1. second
+1. third
+```
+> 1. first
+> 1. second
+> 1. third
+
+but, if you use HTML, you can fix this, and customize the list "type"
+
+```html
+<ol type='A' >
+  <li> first </li>
+  <li> second </li>
+  <li> third</li>
+  <ol type='a' >
+    <li> fourth </li>
+    <ol type='i' >
+      <li> fifth </li>
+    </ol>
+  </ol>
+</ol>
+```
+> <ol type='A' >
+>   <li> first </li>
+>   <li> second </li>
+>   <li> third</li>
+>   <ol type='a' >
+>     <li> fourth </li>
+>     <ol type='i' >
+>       <li> fifth </li>
+>     </ol>
+>   </ol>
+> </ol>
+
+### [Description Lists](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) (`<dl>`)
 
 > <dl>
 >  <dt>This is a list</dt>
