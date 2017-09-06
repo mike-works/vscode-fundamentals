@@ -3,7 +3,9 @@
 ## Using Visual Studio Code: Debugging
 
 * **Debugging**
-* [Launch Configuration](./launch-configuration.md)
+* [Launch Configurations](./launch-configuration.md)
+* [Awesome Documents](./markdown.md)
+* [Type Checking](./type-checking.md)
 
 ---
 
@@ -22,7 +24,7 @@ npm run debug
 ```sh
 npm run debug:attach
 ```
-Under the hood, this runs `node --inspect`.
+Under the hood, this runs `node --inspect --inspect-brk`.
 
 <br><br><br><br>
 
@@ -60,7 +62,7 @@ Under the hood, this runs `node --inspect`.
 
 ### Debugging Node w/ VS Code
 
-> 1. Start node with the same `--inspect` flag
+> 1. Start node with the same `--inspect` and `--inspect-brk` flags
 > ```
 > npm run debug:inspect
 > ```
