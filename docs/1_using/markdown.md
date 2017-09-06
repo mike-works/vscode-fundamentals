@@ -1,16 +1,13 @@
 ## HTML
-<style>
-h3 { color: red}
-</style>
 
 ### Images
 ![Corgi1](../../public/vscode.png)
-<img title="Corgi1" src="../../public/vscode.png" height=200 border=3 align=right />
+<img alt="Corgi1" src="../../public/vscode.png" height=200 align=right />
 
 ### Alignment
-> <p align='right'>right ➡</p>
-> <p align='center'>⬅ center ➡</p>
-> <p align='left'>⬅ left</p>
+> <p align=right>right ➡</p>
+> <p align=center>⬅ center ➡</p>
+> <p align=left>⬅ left</p>
 
 ### [Description Lists](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) (`<dl>`)
 
