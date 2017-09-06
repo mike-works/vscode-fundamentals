@@ -1,4 +1,7 @@
 ## HTML
+<style>
+h3 { color: red}
+</style>
 
 ### Images
 ![Corgi1](../../public/vscode.png)
