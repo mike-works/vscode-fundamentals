@@ -31,7 +31,7 @@ Over time we're seeing support for
 
 <br><br><br><br>
 
-### Learning from past lessons
+## Learning from past lessons
 
 🚫 Don't make ANOTHER heavy IDE
 
@@ -44,7 +44,7 @@ Over time we're seeing support for
 
 <br><br><br><br>
 
-### Not just a new twist
+## Not just a new twist
 
 🙌 Best cross-platform [TypeScript](http://www.typescriptlang.org/) development experience available
    - Leverages TypeScript technology to give you insight into your regular JavaScript
@@ -58,7 +58,7 @@ Over time we're seeing support for
 
 <br><br><br><br>
 
-### How this course is going to work
+## How this course is going to work
 
 Agenda is as follows
  1. [Using It](./1_using/)
