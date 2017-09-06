@@ -2,7 +2,7 @@
 
 ### Images
 ![Corgi1](../../public/vscode.png)
-<img title="Corgi1" src="../../public/vscode.png" height=200 align=right />
+<img title="Corgi1" src="../../public/vscode.png" height=200 border=3 align=right />
 
 ### Alignment
 > <p align='right'>right ➡</p>
