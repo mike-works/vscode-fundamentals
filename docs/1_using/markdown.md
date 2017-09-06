@@ -52,8 +52,6 @@ If you wrap multiple inline elements in a `<p>` tag, it's possible to do some in
 >   <img src="../../public/vscode.png" height=100/>
 > </p>
 
-
-
 ## Lists
 
 ### Unordered Lists
@@ -157,7 +155,6 @@ but, if you use HTML, you can fix this, and customize the list "type"
 >  let Hello : string = 'World';
 >```
 > </details>
-
 
 ---
 #### Thanks to folks who posted tips I didn't know about!
