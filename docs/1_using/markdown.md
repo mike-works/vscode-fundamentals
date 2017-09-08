@@ -6,6 +6,7 @@
 * [Launch Configurations](./launch-configuration.md)
 * **Awesome Documents**
 * [Type Checking](./type-checking.md)
+* [Tasks](./tasks.md)
 
 ---
 ## Images

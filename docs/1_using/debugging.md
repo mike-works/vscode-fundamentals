@@ -6,6 +6,7 @@
 * [Launch Configurations](./launch-configuration.md)
 * [Awesome Documents](./markdown.md)
 * [Type Checking](./type-checking.md)
+* [Tasks](./tasks.md)
 
 ---
 
@@ -105,6 +106,6 @@ We can launch this at the same time as our node debugger
 
 # Exercise 1:
 > * Try adding something to the cart. There's a suble bug involving a misunderstanding between client & server about > data format
-> * Set a breakpoint in [/client/data/cart-store.js](/client/data/cart-store.js)'s `_saveCart()` function right before the `PUT` request is sent
+> * Set a breakpoint in [/client/data/cart-store.js](/client/data/cart-store.js#_saveCart)'s `_saveCart()` function right before the `PUT` request is sent
 > * Set a breakpoint in [/server/routes/cart.js](/server/routes/cart.js)'s `.put("/items")` handler, keeping an eye on the body of the HTTP request as it lands
 > * You should be able to (almost) step from one breakpoint to the other
