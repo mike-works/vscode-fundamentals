@@ -73,25 +73,7 @@
 
 ## Tasks: Capturing output into "problems"
 
-* If the output of this command printed indications of problems in our code (at a particular file/line), there are a variety of parsers we could take advantage of
-
-```js
-  "taskName": "echo",
-  "type": "shell",
-  "command": "echo",
-  "args": [
-    "I said, 'Hello world'"
-  ],
-  "options": {
-    "cwd": "${workspaceRoot}"
-  }
-```
-
-<br><br>
-
-* This is great, it'll log stuff out to the embedded terminal!
-* Command+Click on a file path will open that file
-* But what about pointing out problems by line/column?
+* If the output of this command printed indications of problems in our code (at a particular file/line), we can Command+Click on a file path will open that file
 
 ```js
   "taskName": "echo",
@@ -104,9 +86,14 @@
     "cwd": "${workspaceRoot}"
   },
 ```
+
+<br><br>
+
+* But what about pointing out problems by line/column?
+
 This task would output something like
 ```ruby
-client/index.tsx,LINE:20,this line stinks
+client/index.tsx,LINE:8,this line stinks
 ```
 What we need is a regular expression, with "capture groups"
 * https://regex101.com/
@@ -167,4 +154,5 @@ and clicking on the problem should take us right to the appropriate line in the 
 > * <details><summary>click for sample output</summary><pre>ERROR: /Users/northm/Development/workshops/vscode/client/components/app-header/index.tsx[22, 7]: Identifier 'cartIcon' is never reassigned; use 'const' instead of 'let'.</pre></details>
 > 1. Create a custom task to run TSLint
 > 2. Define a regex-based Problem Matcher to capture output, so that any issues found are shown in the "problems" panel
+> 3. Fix all the bugs it points out
 
