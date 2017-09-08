@@ -1,4 +1,4 @@
-module.exports = function (sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   const GroceryItem = require('./grocery-item')(sequelize, DataTypes);
 
   const CartItem = sequelize.define('cart-item', {
@@ -16,4 +16,4 @@ module.exports = function (sequelize, DataTypes) {
   });
   CartItem.belongsTo(GroceryItem, { as: 'groceryItem'});
   return CartItem;
-}
+};

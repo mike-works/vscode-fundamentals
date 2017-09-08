@@ -24,10 +24,10 @@ function dev() {
 
     // public path to bind the middleware to
     // use the same as in webpack
-    publicPath: "/",
+    publicPath: '/',
 
     // custom headers
-    headers: { "X-Custom-Header": "yes" },
+    headers: { 'X-Custom-Header': 'yes' },
 
     // options for formating the statistics
     stats: 'minimal',
@@ -41,6 +41,5 @@ function hot() {
     // heartbeat: 10 * 1000
   });
 }
-
 
 module.exports = { dev, hot };

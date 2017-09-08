@@ -1,5 +1,5 @@
-const Router = require("koa-router");
-const Db = require("../db");
+const Router = require('koa-router');
+const Db = require('../db');
 
 let router = new Router();
 
@@ -33,22 +33,22 @@ async function addCartItems(items, CartItem) {
   );
 }
 
-router.get("/items", async function(ctx, next) {
-  const CartItem = Db.instance.models["cart-item"];
-  const GroceryItem = Db.instance.models["grocery-item"];
+router.get('/items', async function(ctx, next) {
+  const CartItem = Db.instance.models['cart-item'];
+  const GroceryItem = Db.instance.models['grocery-item'];
 
   try {
     let results = await CartItem.findAll({
-      include: [{ model: GroceryItem, as: "groceryItem" }]
+      include: [{ model: GroceryItem, as: 'groceryItem' }]
     });
     let plainResults = results.map(x => x.get({ plain: true }));
     ctx.body = { data: plainResults };
   } catch (err) {
     ctx.body = { error: `Problem fetching data: ${err}` };
   }
-}).put("/items", async function(ctx, next) {
-  const CartItem = Db.instance.models["cart-item"];
-  const GroceryItem = Db.instance.models["grocery-item"];
+}).put('/items', async function(ctx, next) {
+  const CartItem = Db.instance.models['cart-item'];
+  const GroceryItem = Db.instance.models['grocery-item'];
 
   let items = ctx.request.body.data;
   await Db.instance.transaction(async () => {
@@ -72,7 +72,7 @@ router.get("/items", async function(ctx, next) {
     }
 
     let results = await CartItem.findAll({
-      include: [{ model: GroceryItem, as: "groceryItem" }]
+      include: [{ model: GroceryItem, as: 'groceryItem' }]
     });
     let plainResults = results.map(x => x.get({ plain: true }));
     ctx.body = { data: plainResults };

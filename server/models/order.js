@@ -1,5 +1,5 @@
 let Order = null;
-module.exports = function (sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   if (!Order) {
     Order = sequelize.define('order', {
       name: {
@@ -23,4 +23,4 @@ module.exports = function (sequelize, DataTypes) {
     });
   }
   return Order;
-}
+};

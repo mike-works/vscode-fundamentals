@@ -1,12 +1,12 @@
-const Router = require("koa-router");
-const Db = require("../db");
+const Router = require('koa-router');
+const Db = require('../db');
 
 let router = new Router();
-router.post("/", async function(ctx, next) {
-  const OrderItem = Db.instance.models["order-item"];
-  const Order = Db.instance.models["order"];
-  const CartItem = Db.instance.models["cart-item"];
-  const GroceryItem = Db.instance.models["grocery-item"];
+router.post('/', async function(ctx, next) {
+  const OrderItem = Db.instance.models['order-item'];
+  const Order = Db.instance.models.order;
+  const CartItem = Db.instance.models['cart-item'];
+  const GroceryItem = Db.instance.models['grocery-item'];
 
   let items = ctx.request.body.data;
   await Db.instance.transaction(async () => {
@@ -19,10 +19,10 @@ router.post("/", async function(ctx, next) {
         }
       });
       if (groceryItems.length === 0) {
-        return Promise.reject("No items in order!");
+        return Promise.reject('No items in order!');
       }
       let order = await Order.create({
-        name: "TBD",
+        name: 'TBD',
         totalPrice: 0
       });
       let totalPrice = 0;
@@ -53,11 +53,11 @@ router.post("/", async function(ctx, next) {
         include: [
           {
             model: OrderItem,
-            as: "orderItems",
+            as: 'orderItems',
             include: [
               {
                 model: GroceryItem,
-                as: "groceryItem"
+                as: 'groceryItem'
               }
             ]
           }

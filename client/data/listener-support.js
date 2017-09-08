@@ -7,7 +7,7 @@
  */
 export default class ListenerSupport {
   constructor() {
-    this._listeners = []
+    this._listeners = [];
   }
   
   /**

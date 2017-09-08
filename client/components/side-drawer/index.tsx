@@ -3,8 +3,8 @@ import * as React from 'react';
 
 import './styles.scss';
 
-const SideDrawer = ({ drawerShowing, children, side}) => {
-  let topClasses = ['sidedrawer', 'mui--no-user-select', (side || 'left')];
+function SideDrawer({ drawerShowing, children, side}) {
+  const topClasses = ['sidedrawer', 'mui--no-user-select', (side || 'left')];
   if (drawerShowing) {
     topClasses.push('active');
   }

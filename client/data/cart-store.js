@@ -11,7 +11,7 @@ export default class CartStore {
   /**
    * Instantiate a new CartStore
    * There's usually only one of these per app
-   * 
+   *
    * @public
    * @return {CartStore}
    */
@@ -26,7 +26,7 @@ export default class CartStore {
     /**
      * The _restoreCart() function is responsible for getting the "initial"
      * cart state. This may seem a little strange for now, but it's a "blank"
-     * we'll fill in later as we add in offline support 
+     * we'll fill in later as we add in offline support
      */
     this._restoreCart().then((newItems) => {
       // once the promise returned by _restoreCart resolves

@@ -1,22 +1,22 @@
-const Router = require("koa-router");
-const Db = require("../db");
+const Router = require('koa-router');
+const Db = require('../db');
 
 let router = new Router();
 router
-  .get("/", async function(ctx, next) {
-    const Order = Db.instance.models["order"];
-    const OrderItem = Db.instance.models["order-item"];
-    const GroceryItem = Db.instance.models["grocery-item"];
+  .get('/', async function(ctx, next) {
+    const Order = Db.instance.models.order;
+    const OrderItem = Db.instance.models['order-item'];
+    const GroceryItem = Db.instance.models['grocery-item'];
 
     let queryOptions = {
       include: [
         {
           model: OrderItem,
-          as: "orderItems",
+          as: 'orderItems',
           include: [
             {
               model: GroceryItem,
-              as: "groceryItem"
+              as: 'groceryItem'
             }
           ]
         }
@@ -24,24 +24,24 @@ router
     };
 
     let status = (ctx.request.query || {}).status;
-    switch ((status || "").toLowerCase()) {
-      case "all":
+    switch ((status || '').toLowerCase()) {
+      case 'all':
         break;
       case undefined:
-      case "":
+      case '':
         queryOptions.where = {
-          status: "pending"
+          status: 'pending'
         };
         break;
-      case "pending":
-      case "inprogress":
-      case "complete":
+      case 'pending':
+      case 'inprogress':
+      case 'complete':
         queryOptions.where = {
           status
         };
         break;
       default:
-        throw `Invalid status filter: ${status}`;
+        throw new Error(`Invalid status filter: ${status}`);
     }
     try {
       let results = await Order.findAll(queryOptions);
@@ -53,10 +53,10 @@ router
       ctx.body = { error: `Problem fetching data: ${err}` };
     }
   })
-  .get("/:id", async function(ctx, next) {
-    const Order = Db.instance.models["order"];
-    const OrderItem = Db.instance.models["order-item"];
-    const GroceryItem = Db.instance.models["grocery-item"];
+  .get('/:id', async function(ctx, next) {
+    const Order = Db.instance.models.order;
+    const OrderItem = Db.instance.models['order-item'];
+    const GroceryItem = Db.instance.models['grocery-item'];
 
     let queryOptions = {
       where: {
@@ -65,11 +65,11 @@ router
       include: [
         {
           model: OrderItem,
-          as: "orderItems",
+          as: 'orderItems',
           include: [
             {
               model: GroceryItem,
-              as: "groceryItem"
+              as: 'groceryItem'
             }
           ]
         }

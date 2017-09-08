@@ -10,15 +10,15 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: __dirname + "/dist",
-    publicPath: "/"
+    path: __dirname + '/dist',
+    publicPath: '/'
   },
-  devtool: "source-map",
+  devtool: 'source-map',
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: [".ts", ".tsx", ".js", ".json", ".scss"]
+    extensions: ['.ts', '.tsx', '.js', '.json', '.scss']
   },
-  
+
   devServer: {
     stats: 'minimal',
   },

@@ -4,7 +4,6 @@ const Db = require('../db');
 let router = new Router();
 let _cachedCategories = null;
 
-
 const QUERY_DEFAULTS = Object.freeze({ limit: 10, offset: 0 });
 
 function capitalize(str) {
@@ -15,7 +14,7 @@ function toTitleCase(rawStr) {
   return rawStr
     .split(/[\s-]+/g)
     .map((s) => capitalize(s))
-    .join(' ')
+    .join(' ');
 }
 
 function prepareQuery(rawQuery) {
@@ -30,9 +29,8 @@ function prepareQuery(rawQuery) {
   return safeQuery;
 }
 
-
 router
-  .get('/categories', async function (ctx, next) {
+  .get('/categories', async function(ctx, next) {
     const GroceryItem = Db.instance.models['grocery-item'];
     
     if (_cachedCategories) {
@@ -51,12 +49,12 @@ router
     let queryOptions = prepareQuery(ctx.query || {});
     
     try {
-      let results = await GroceryItem.findAll(queryOptions)
-      let plainResults = results.map((x) => x.get({plain: true}))
+      let results = await GroceryItem.findAll(queryOptions);
+      let plainResults = results.map((x) => x.get({plain: true}));
       ctx.body = {data: plainResults};  
-    } catch(err) {
-        ctx.body = { error: `Problem fetching data: ${err}` };
+    } catch (err) {
+      ctx.body = { error: `Problem fetching data: ${err}` };
     }
   });
 
-  module.exports = router;
+module.exports = router;

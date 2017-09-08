@@ -8,13 +8,13 @@ function formatPrice(price) {
 }
 
 interface ICartProps {
-  cartStore: any
-  orderStore: any
-  cartItems: any
+  cartStore: any;
+  orderStore: any;
+  cartItems: any;
 }
 
 interface ICartState {
-  checkoutConfirmVisible: boolean
+  checkoutConfirmVisible: boolean;
 }
 
 class Cart extends React.Component<ICartProps, ICartState> {
@@ -29,8 +29,8 @@ class Cart extends React.Component<ICartProps, ICartState> {
     this.setState({checkoutConfirmVisible: false});
   }
   render() {
-    let cartStore = this.props.cartStore;
-    let cartItems = cartStore.items;
+    const cartStore = this.props.cartStore;
+    const cartItems = cartStore.items;
 
     if (cartItems.length === 0) {
       return (
@@ -41,34 +41,34 @@ class Cart extends React.Component<ICartProps, ICartState> {
         </ul>
       );
     }
-    let items = cartItems.map((item) => (
+    const items = cartItems.map((item) => (
       <CartItem cartStore={cartStore} key={item.groceryItem.id} cartItem={item} />
     ));
 
-    let grandTotal = cartItems.reduce((tot, item) => {
+    const grandTotal = cartItems.reduce((tot, item) => {
       return tot + (item.groceryItem.price * item.qty);
     }, 0);
 
-    let checkoutConfirmClassName = `checkout-confirm ${this.state.checkoutConfirmVisible ? 'open' : ''}`;
+    const checkoutConfirmClassName = `checkout-confirm ${this.state.checkoutConfirmVisible ? 'open' : ''}`;
 
-    let checkoutButton = (
+    const checkoutButton = (
       <div className='checkout-btn-container'>
         <button className='checkout-btn mui-btn mui-btn--accent'
           onClick={() => {
             this.confirmCheckout();
           }}>
-          Checkout <span className="amt">{formatPrice(grandTotal)}</span>
+          Checkout <span className='amt'>{formatPrice(grandTotal)}</span>
         </button>
         <div className={checkoutConfirmClassName}>
-          <h4 className="mui--text-center">Are you sure?</h4>
+          <h4 className='mui--text-center'>Are you sure?</h4>
           <button onClick={() => {
             cartStore.doCheckout().then(() => {
               this.props.orderStore.refresh();
-            })
+            });
           } } className='mui-btn mui-btn--primary confirm-btn'>Yes</button>
           <button onClick={() => this.cancelConfirmCheckout()} className='mui-btn mui-btn--secondary cancel-btn'>No</button>
         </div>
-        <div className="mui-divider"></div>
+        <div className='mui-divider'></div>
       </div>
     );
 
@@ -80,7 +80,7 @@ class Cart extends React.Component<ICartProps, ICartState> {
             {items}
           </tbody>
         </table>
-        <div className="mui-divider"></div>
+        <div className='mui-divider'></div>
       </div>
     );
   }

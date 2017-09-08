@@ -1,5 +1,5 @@
 let OrderItem = null;
-module.exports = function (sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   if (!OrderItem) {
     const GroceryItem = require('./grocery-item')(sequelize, DataTypes);
     const Order = require('./order')(sequelize, DataTypes);
@@ -29,4 +29,4 @@ module.exports = function (sequelize, DataTypes) {
     return OrderItem;
   }
   return OrderItem;
-}
+};

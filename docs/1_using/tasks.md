@@ -20,5 +20,66 @@
 
 <br><br><br><br>
 
-## [tasks.json](../../.vscode/tasks.json)
-* Similar 
+## Custom tasks in [tasks.json](../../.vscode/tasks.json)
+* Define one or more things in the `tasks` array
+* Basic Example of a `"type": "shell"` task
+```js
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "taskName": "echo",
+      "type": "shell",
+      "command": "echo Hello"
+    }
+  ]
+}
+```
+
+<br><br>
+
+* It's best to use the `"args"` property to ensure arguments are properly quoted
+
+```js
+{
+  "taskName": "echo",
+  "type": "shell",
+  "command": "echo",
+  "args": [
+    "I said, 'Hello world'"
+  ]
+}
+```
+<br><br>
+
+* We can add a working directory option as well, to ensure this runs at our project root folder
+
+```js
+{
+  "taskName": "echo",
+  "type": "shell",
+  "command": "echo",
+  "args": [
+    "I said, 'Hello world'"
+  ],
+  "options": {
+    "cwd": "${workspaceRoot}"
+  }
+}
+```
+<br><br>
+
+* If the output of this command printed indications of problems in our code (at a particular file/line), there are a variety of parsers we could take advantage of
+
+```js
+  "taskName": "echo",
+  "type": "shell",
+  "command": "echo",
+  "args": [
+    "I said, 'Hello world'"
+  ],
+  "options": {
+    "cwd": "${workspaceRoot}"
+  }
+```
+

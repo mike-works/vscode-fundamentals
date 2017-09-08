@@ -4,7 +4,7 @@ import * as React from 'react';
 import GroceryItem from '../../../components/grocery-item';
 
 class CategoryRow extends React.Component<any, any> {
-  private _itemUpdateListener: () => void
+  private itemUpdateListener: () => void;
   constructor(props) {
     super(props);
     this.state = {
@@ -18,19 +18,19 @@ class CategoryRow extends React.Component<any, any> {
   }
   componentDidMount() {
     this._updateGroceryItems();
-    this._itemUpdateListener = () => {
+    this.itemUpdateListener = () => {
       this._updateGroceryItems();
     };
-    this.props.groceryItemStore.itemListeners.register(this._itemUpdateListener);
+    this.props.groceryItemStore.itemListeners.register(this.itemUpdateListener);
     this.props.groceryItemStore.updateItemsForCategory(this.props.categoryName, 10);
   }
 
   componentWillUnmount() {
-    this.props.groceryItemStore.itemListeners.unregister(this._itemUpdateListener);
+    this.props.groceryItemStore.itemListeners.unregister(this.itemUpdateListener);
   }
 
   render() {
-    let itemComponents = this.state.groceryItems.map((item) => (
+    const itemComponents = this.state.groceryItems.map((item) => (
       <GroceryItem
         cartStore={this.props.cartStore}
         key={item.id}
@@ -39,11 +39,11 @@ class CategoryRow extends React.Component<any, any> {
     return (
       <li className='CategoryRow'>
         <h2 className='category-name'>{this.props.categoryName}</h2>
-        <ul className="grocery-item-list">
+        <ul className='grocery-item-list'>
           {itemComponents}
         </ul>
       </li>
-    )
+    );
   }
 }
 

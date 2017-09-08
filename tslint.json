@@ -1,3 +1,37 @@
 {
-  "extends": "tslint:recommended"
+  "extends": "tslint:recommended",
+  "jsRules": {
+    "quotemark": [false, "single", "avoid-escape", "avoid-template"],
+    "ordered-imports": false,
+    "member-access": false,
+    "object-literal-sort-keys": false,
+    "trailing-comma": false,
+    "curly": false,
+    "prefer-const": false,
+    "max-line-length": [false],
+    "eofline": false,
+    "no-trailing-whitespace": [
+      false
+    ],
+    "no-console": false,
+    "variable-name": [
+      false
+    ],
+    "space-before-function-paren": false
+  },
+  "rules": {
+    "quotemark": [false, "single", "avoid-escape", "avoid-template"],
+    "ordered-imports": false,
+    "member-access": false,
+    "object-literal-sort-keys": false,
+    "trailing-comma": false,
+    "curly": false,
+    "max-line-length": [false],
+    "eofline": false,
+    "no-trailing-whitespace": [
+      false
+    ],
+    "no-console": false,
+    "space-before-function-paren": false
+  }
 }

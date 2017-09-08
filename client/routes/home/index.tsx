@@ -4,11 +4,11 @@ import * as React from 'react';
 import CategoryRow from './category-row';
 
 interface IHomeProps {
-  groceryItemStore: any
-  cartStore: any
+  groceryItemStore: any;
+  cartStore: any;
 }
 interface IHomeState {
-  categories: any[]
+  categories: any[];
 }
 
 class Home extends React.Component<IHomeProps, IHomeState> {
@@ -19,14 +19,14 @@ class Home extends React.Component<IHomeProps, IHomeState> {
   componentDidMount() {
     this.props.groceryItemStore.categoryListeners.register((newCategories) => {
       this.setState({categories: newCategories});
-    })
+    });
     this.props.groceryItemStore.updateCategories();
   }
 
   render() {
-    let categoryRows = this.state.categories.map((c) => (
+    const categoryRows = this.state.categories.map((c) => (
       <CategoryRow
-        className="category-list__item"
+        className='category-list__item'
         key={c}
         cartStore={this.props.cartStore}
         groceryItemStore={this.props.groceryItemStore}
@@ -34,14 +34,12 @@ class Home extends React.Component<IHomeProps, IHomeState> {
     ));
     return (
       <div className='Home'>
-        <ul className="category-list">
+        <ul className='category-list'>
           {categoryRows}
         </ul>
       </div>
-    )
+    );
   }
 }
-
-
 
 export default Home;

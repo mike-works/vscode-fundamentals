@@ -26,7 +26,7 @@ async function seedDb() {
     items.forEach((item, idx) => {
       let [name, category, price, imageUrl] = item;
       https.get(imageUrl, (response) => {
-        var file = fs.createWriteStream(path.join(__dirname, '..', 'images', `${idx+1}.jpg`));
+        var file = fs.createWriteStream(path.join(__dirname, '..', 'images', `${ idx + 1 }.jpg`));
         response.pipe(file);
         let {unit, unitPrice} = processPrice(price);
         return GroceryItem.create({
@@ -34,7 +34,7 @@ async function seedDb() {
           category,
           price: unitPrice,
           unit,
-          imageUrl: `/images/${idx+1}.jpg`
+          imageUrl: `/images/${ idx + 1 }.jpg`
         });
       });
     });

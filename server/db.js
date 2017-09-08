@@ -40,12 +40,8 @@ async function ensureDevelopmentDbExists() {
         let stream = fs
           .createReadStream(dbPath('master'))
           .pipe(fs.createWriteStream(dbPath('development')));
-        stream.on('finish', function () {
-          resolve();
-        });
-        stream.on('error', function () {
-          reject();
-        });
+        stream.on('finish', resolve);
+        stream.on('error', reject);
       } else {
         resolve();
       }
@@ -58,7 +54,7 @@ class Db {
     this._models = null;
   }
   async _connectToDatabase() {
-    let conn
+    let conn;
     try {
       conn = await openDb('development');
     } catch (err) {
@@ -81,12 +77,13 @@ class Db {
     await ensureDevelopmentDbExists();
     this.db = await this._connectToDatabase();
     this.db.sync();
+    // tslint:disable-next-line:no-unused-expression
     this.models;
   }
 
   get models() {
     if (!this.db) {
-      throw 'DB has not been started yet';
+      throw new Error('DB has not been started yet');
     }
     if (this._models === null) {
       this._models = dbModels(this.db);

@@ -1,5 +1,5 @@
 let _model = null;
-module.exports = function (sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   if (!_model) {
     _model = sequelize.define('grocery-item', {
       name: { type: DataTypes.STRING },
@@ -14,4 +14,4 @@ module.exports = function (sequelize, DataTypes) {
     });
   }
   return _model;
-}
+};

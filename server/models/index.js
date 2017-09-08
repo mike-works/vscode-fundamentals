@@ -2,12 +2,12 @@ let fs = require('fs');
 let path = require('path');
 let Sequelize = require('sequelize');
 
-module.exports = function (sequelize) {
+module.exports = function(sequelize) {
 
   let db = {};
 
   let modelFiles = fs.readdirSync(__dirname)
-    .filter(function (file) {
+    .filter(function(file) {
       return (file.indexOf('.') !== 0) && (file !== 'index.js');
     });
 
@@ -25,4 +25,4 @@ module.exports = function (sequelize) {
   db.sequelize = sequelize;
   db.Sequelize = Sequelize;
   return db;
-}
+};

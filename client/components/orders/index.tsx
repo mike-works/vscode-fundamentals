@@ -2,14 +2,14 @@ import * as React from 'react';
 
 import './styles.scss';
 
-const Orders = ({ orders }) => {
-  let orderItems = orders.map((o) => {
+function Orders({ orders }) {
+  const orderItems = orders.map((o) => {
     return (
       <li key={o.id} className='orders-list-item sidedrawer-list__item'>
         <p>{o.name}</p>
         <p>
-          <span className="mui--pull-right">
-            <span className="badge">
+          <span className='mui--pull-right'>
+            <span className='badge'>
               {o.status}
             </span>
           </span>
@@ -17,7 +17,7 @@ const Orders = ({ orders }) => {
         </p>
       </li>
     );
-  })
+  });
   return (
     <ul className='sidedrawer-list orders-list'>
       {orderItems.length > 0
