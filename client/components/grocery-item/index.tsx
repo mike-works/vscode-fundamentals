@@ -13,9 +13,9 @@ const GroceryItem = ({ item, cartStore }) => {
   const itemUrl = `${API_ENDPOINT}${item.imageUrl.substring(1)}`;
   const price = formatPrice(item.price);
 
-  const unit = item.unit;
+  const unit = item.unit
   return (
-    <li className='GroceryItem mui-panel'>
+    <li className="GroceryItem mui-panel">
       <img className='item-image' src={itemUrl} alt={item.name} />
       <h4 className='item-name'>{item.name}</h4>
       <span className='item-price bottom-tile bottom-tile--right'>

@@ -38,6 +38,8 @@
 
 <br><br>
 
+## Tasks: Shell Command Arguments
+
 * It's best to use the `"args"` property to ensure arguments are properly quoted
 
 ```js
@@ -69,6 +71,8 @@
 ```
 <br><br>
 
+## Tasks: Capturing output into "problems"
+
 * If the output of this command printed indications of problems in our code (at a particular file/line), there are a variety of parsers we could take advantage of
 
 ```js
@@ -82,4 +86,85 @@
     "cwd": "${workspaceRoot}"
   }
 ```
+
+<br><br>
+
+* This is great, it'll log stuff out to the embedded terminal!
+* Command+Click on a file path will open that file
+* But what about pointing out problems by line/column?
+
+```js
+  "taskName": "echo",
+  "type": "shell",
+  "command": "echo",
+  "args": [
+    "client/index.tsx,LINE:8,this line stinks"
+  ],
+  "options": {
+    "cwd": "${workspaceRoot}"
+  },
+```
+This task would output something like
+```ruby
+client/index.tsx,LINE:20,this line stinks
+```
+What we need is a regular expression, with "capture groups"
+* https://regex101.com/
+* http://regexr.com/
+
+Cheat sheet
+```
+[0-9]        any number
+[w]+         1 or more "w" characters
+[w]*         0 or more "w" characters
+[\s\w]+      1 or more "word" or "space"
+LINE:([0-9]+)  grab digits after "LINE:"
+```
+EXAMPLE:
+If our string is `LINE:31`, and we use a regex like
+```
+LINE:([0-9]+)
+```
+* Group 0: "LINE:31"
+* Group 1: "31"
+
+<h2 style='color: limegreen' align=center>Let's figure out the appropriate regex!</h2>
+
+<br><br><br><br>
+
+Once we have this, we can use it our task
+
+```js
+{
+  "taskName": "echo",
+  "type": "shell",
+  "command": "echo",
+  "problemMatcher": {
+    "owner": "ts",
+    "pattern": {
+      "regexp": `<the regex>`,
+      "file": 1,
+      "line": 2,
+      "message": 3
+    }
+  }
+}
+```
+And we should see the following in our "problems" tab
+<p align=center>
+<img src='../../public/tasks/problems.png' width=200>
+</p>
+and clicking on the problem should take us right to the appropriate line in the appropriate file
+<p align=center>
+<img src='../../public/tasks/redline.png' width=400>
+</p>
+
+<br><br><br><br>
+
+# Exercise 2: TSLint Problems
+> * Think of it as "ESLint for TypeScript"
+> * You can run this via `./node_modules/.bin/tslint --project <root of your workspace>`
+> * <details><summary>click for sample output</summary><pre>ERROR: /Users/northm/Development/workshops/vscode/client/components/app-header/index.tsx[22, 7]: Identifier 'cartIcon' is never reassigned; use 'const' instead of 'let'.</pre></details>
+> 1. Create a custom task to run TSLint
+> 2. Define a regex-based Problem Matcher to capture output, so that any issues found are shown in the "problems" panel
 
