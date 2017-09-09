@@ -5,6 +5,7 @@ const webpack = require('webpack');
 module.exports = [
   new HtmlWebpackPlugin({
     template: './client/index.ejs',
+    title: "Frontend Grocer",
     apiEndpoint: process.env.API_ENDPOINT || 'https://localhost:3000'
   }),
   new webpack.optimize.OccurrenceOrderPlugin(false),

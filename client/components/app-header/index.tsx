@@ -11,7 +11,7 @@ interface IAppHeaderProps {
 }
 
 function AppHeader(props) {
-  const { doLeftToggle, doRightToggle, numItemsInCart } = this.props;
+  const { doLeftToggle, doRightToggle, numItemsInCart } = props;
 
   const appLogo = (
     <svg fill='#FFFF4C' className='logo' width='16pt' height='16pt' version='1.1' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>
