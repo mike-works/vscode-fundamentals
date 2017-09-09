@@ -88,12 +88,12 @@
 
 
 ## Exercise: Analyze & Monitor
-* Build two new launch configurations
-  * Show a bundle analysis visualization
-    * Ultimately this command needs to be run `ANALYIZE=true node ./server/index.js` (ANALYZE is an environment variable)
-    * We don't want to have to "attach" to this. Just let it run
-  * Launch our server, but use `nodemon` to have it restart as we save files
-    * You'll need to install the `nodemon` npm package globally (`npm install -g nodemon`)
-    * Ultimately the command you'll need to run is something like   `nodemon ./server/index.js`
-    * Running this should result in the debug console opening, but only when we "launch", not on every restart
-    * We shouldn't have to "attach" to this. It should be a one-click launch
+> ### Build two new launch configurations
+>  * Show a bundle analysis visualization
+>    * Ultimately this command needs to be run `ANALYIZE=true node ./server/index.js` (ANALYZE is an environment variable)
+>    * We don't want to have to "attach" to this. Just let it run
+>  * Launch our server, but use `nodemon` to have it restart as we save files
+>    * You'll need to install the `nodemon` npm package globally (`npm install -g nodemon`)
+>    * Ultimately the command you'll need to run is something like   `nodemon ./server/index.js`
+>    * Running this should result in the debug console opening, but only when we "launch", not on every restart
+>    * We shouldn't have to "attach" to this. It should be a one-click launch
