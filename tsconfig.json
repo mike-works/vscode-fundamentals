@@ -4,18 +4,13 @@
     "jsx": "react",
     "module": "commonjs",
     "sourceMap": true,
-    "noImplicitAny": false,
+    "noImplicitReturns": true,
     "experimentalDecorators": true,
     "baseUrl": ".",
     "allowJs": true,
     "paths": {
-      "muicss": [
-        "node_modules/muicss/lib/react/*"
-      ]
+      "muicss": ["node_modules/muicss/lib/react/*"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "server.js"
-  ]
+  "exclude": ["node_modules", "server.js"]
 }

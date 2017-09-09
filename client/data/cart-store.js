@@ -1,9 +1,7 @@
-// @ts-check
-
 import ListenerSupport from './listener-support';
 import { endpoint as API_ENDPOINT } from '../utils/api';
 
-/**
+ /**
  * A class for keeing track of shopping cart state
  * @public
  */
@@ -13,7 +11,6 @@ export default class CartStore {
    * There's usually only one of these per app
    *
    * @public
-   * @return {CartStore}
    */
   constructor() {
     this._items = []; // Items currently in the cart
@@ -40,7 +37,7 @@ export default class CartStore {
    * This is a read-only array
    * 
    * @public
-   * @return {ReadonlyArray<Object>}
+   * @return {ReadonlyArray<any>}
    */
   get items() {
     return Object.freeze([...this._items]);
@@ -51,7 +48,7 @@ export default class CartStore {
    * For now the cart will start as an empty array, but we'll enhance this later!
    * 
    * @private
-   * @return {Promise<Array<Object>>}
+   * @return {Promise<any>}
    */
   _restoreCart() {
     return fetch(`${API_ENDPOINT}api/cart/items`)
@@ -64,7 +61,7 @@ export default class CartStore {
    * For now this will only cause the UI to update, but we'll enhance it later
    * 
    * @private
-   * @return {Promise} the new cart
+   * @return {any} the new cart
    */
   _saveCart() {
     this._onItemsUpdated();
@@ -84,7 +81,7 @@ export default class CartStore {
    * into an "order"
    * 
    * @public
-   * @return {Promise} 
+   * @return {any} 
    */
   doCheckout() {
     return fetch(`${API_ENDPOINT}api/order`, {
@@ -103,13 +100,13 @@ export default class CartStore {
   }
 
   /**
-   * 
-   * @param {Object} groceryItem 
+   * Add a new grocery item to the cart
+   * @param {Object} groceryItem a grocery item
    */
   addItemToCart(groceryItem) {
     // check to see if this grocery item is already in the cart
     let existingCartItem = this._items
-      .filter((ci) => `${ci.groceryItem.id}` === `${groceryItem.id}`)[0];
+      .filter(ci => `${ci.groceryItem.id}` === `${groceryItem.id}`)[0];
     
     if (existingCartItem) {
       // if it's already in the cart, increment its quantity
@@ -135,7 +132,7 @@ export default class CartStore {
   removeItemFromCart(groceryItem) {
     // find an existing object in the cart corresponding to this grocery item
     let existingCartItem = this._items
-      .filter((ci) => ci.groceryItem.id === groceryItem.id)[0];
+      .filter(ci => ci.groceryItem.id === groceryItem.id)[0];
     
     if (!existingCartItem) return; // nothing was in the cart to begin with
     
@@ -158,7 +155,6 @@ export default class CartStore {
    * Notify any registered listeners that the cart items have changed
    * 
    * @private
-   * @return {void}
    */
   _onItemsUpdated() {
     this.itemListeners.fire(this.items);
