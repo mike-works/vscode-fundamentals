@@ -24,21 +24,21 @@
 
 ### Selection
 
-* Select All `Cmd + A`
-* Select Next Occurrence `Cmd + D`
-* Select All Occurrences `Cmd + Shift + L`
+* Select All <kbd>Cmd + A</kbd>
+* Select Next Occurrence <kbd>Cmd + D</kbd>
+* Select All Occurrences <kbd>Cmd + Shift + L</kbd>
 
 ### Multi-Cursor
 
-* Add cursor @ position `Opt + Click`
-* Box select  `Opt + Shift + Click`
-* Undo last cursor `Cmd + U`
+* Add cursor @ position <kbd>Opt + Click</kbd>
+* Box select <kbd>Opt + Shift + Click</kbd>
+* Undo last cursor <kbd>Cmd + U</kbd>
 
 ### Line Manipulation
 
-* Copy Line Below `Opt + Shift + ⬇️`
-* Move Line Up `Opt + ⬆️`
-* Move Line Down `Opt + ⬇️`
+* Copy Line Below <kbd>Opt + Shift + ⬇️</kbd>
+* Move Line Up <kbd>Opt + ⬆️</kbd>
+* Move Line Down <kbd>Opt + ⬇️</kbd>
 
 <br><br><br><br>
 
@@ -53,8 +53,8 @@
 ### Rename
 
 * Level 1: Find/Replace
-* Level 2: `Cmd + D` for selection
-* Level 3: `F2` for rename in ALL FILES
+* Level 2: <kbd>Cmd + D</kbd> for selection
+* Level 3: <kbd>F2</kbd> for rename in ALL FILES
 
 <br><br><br><br>
 

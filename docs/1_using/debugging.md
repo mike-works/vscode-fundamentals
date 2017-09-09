@@ -81,7 +81,7 @@ npm run debug:inspect
 }
 ```
 
-4. Now press the "Launch (▶️)" button to attach to the Node runtime
+4. Now press the <kbd>Launch ▶️</kbd> button to attach to the Node runtime
 * Inspector vs Legacy Protocol
 * Launch vs. Attach
 * Conditional breakpoints
