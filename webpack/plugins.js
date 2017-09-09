@@ -1,8 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const extractSass = require('./extract-sass');
 const webpack = require('webpack');
 
-module.exports = [
+let plugins = [
   new HtmlWebpackPlugin({
     template: './client/index.ejs',
     title: "Frontend Grocer",
@@ -13,3 +14,9 @@ module.exports = [
   new webpack.NoEmitOnErrorsPlugin(),
   extractSass
 ];
+
+if (process.env.ANALYZE) {
+  plugins.push(new BundleAnalyzerPlugin());
+}
+
+module.exports = plugins;

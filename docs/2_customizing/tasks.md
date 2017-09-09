@@ -154,5 +154,5 @@ and clicking on the problem should take us right to the appropriate line in the 
 > * <details><summary>click for sample output</summary><pre>ERROR: /Users/northm/Development/workshops/vscode/client/components/app-header/index.tsx[22, 7]: Identifier 'cartIcon' is never reassigned; use 'const' instead of 'let'.</pre></details>
 > 1. Create a custom task to run TSLint
 > 2. Define a regex-based Problem Matcher to capture output, so that any issues found are shown in the "problems" panel
-> 3. Fix all the bugs it points out
+> 3. Fix all the bugs it points out (Cycle through problems w/ `F8`)
 

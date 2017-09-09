@@ -166,6 +166,21 @@ but, if you use HTML, you can fix this, and customize the list "type"
 >```
 > </details>
 
+
+| Item      | Price | Quantity |
+|-----------|-------|----------|
+| 🍇 Grapes | $2.99 | 3        |
+| 🍐 Pears  | $4.15 | 1        |
+| 🍋 Lemons | $0.99 | 2        |
+
+> ```md
+> | Item      | Price | Qty |
+> |-----------|-------|-----|
+> | 🍇 Grapes | $2.99 | 3   |
+> | 🍐 Pears  | $4.15 | 1   |
+> | 🍋 Lemons | $0.99 | 2   |
+> ```
+
 ---
 #### Thanks to folks who posted tips I didn't know about!
 * [@mxstbr](https://github.com/mxstbr)  for [hanging indentation](https://github.com/mxstbr/github-markdown-tricks#hanging-indendation)

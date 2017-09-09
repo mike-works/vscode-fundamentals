@@ -85,6 +85,9 @@ npm run debug:inspect
 * Inspector vs Legacy Protocol
 * Launch vs. Attach
 * Conditional breakpoints
+* Restart Frame
+* Column Breakpoints
+* Skipping Code
 
 <br><br><br><br>
 
