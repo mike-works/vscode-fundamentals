@@ -44,9 +44,9 @@ Because VS Code is built with web technology, it’s easy for JavaScript and Typ
 #### By coding along with this two day (split into four half-days) workshop, you will:
 
 * Get hands on experience with debugging in a variety of scenarios
-Learn how to use launch configurations to execute programs run shell scripts
+* Learn how to use launch configurations to execute programs run shell scripts
 * Unlock extra productivity by consolidating your terminal, debugger and editor into one tool
-* Learn about deep customization options that make a REAL difference in how you get your work done
+* Learn about deep customization options that make a **REAL** difference in how you get your work done
 * Get a tour of plugins so powerful, after using them you’ll wonder how you ever lived without them!
 * Build your own “code snippet” extension
 And more…
@@ -66,7 +66,7 @@ Please make sure you have the following general software installed
 | ------------- | ------------- | ---| --- |
 | ✔ | [Node.js](http://nodejs.com/)  | >= 8.0 | [nvm](https://github.com/creationix/nvm) is highly recommended for managing multiple node versions on a single machine |
 | ✔ | [Visual Studio Code](https://code.visualstudio.com/)  | >= 1.14 | We'll be using several specific features of the VS Code editor. We can't force you to use it, but you'll miss out if you don't! |
-| ✔ | [Yarn](https://yarnpkg.com/)  | >= 0.24 | An alternative to [npm](https://github.com/npm/npm) |
+| ✔ | [Yarn](https://yarnpkg.com/)  | >= 0.24 | An alternative to [npm](https://github.com/npm/npm) (if you are using nvm: `brew install yarn --without-node`, else use `brew install yarn`) |
 | ✔ | [SQLite](https://sqlite.org/)  | >= 3 | An embedded relational database (hint: `brew install sqlite3`)|
 
 #### VS Code Extensions
