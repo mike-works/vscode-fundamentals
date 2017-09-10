@@ -12,8 +12,8 @@
 
 ## Emmet Autocompletions
 
+* [Emmet](https://docs.emmet.io/) is a common text editor plugin which greatly improves HTML & CSS workflow
 * Speed up repetitive tasks with `TAB`
-* Plugins for most editors
 * Built into VS Code
 * Works in JSX
 
