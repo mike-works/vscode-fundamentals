@@ -96,6 +96,29 @@ npm install -g <package-name>
 | ✔ | [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel)  | ^4.0.0 |
 | ✔ | [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)  | ^7.1.0 |
 
+
+### What if I have an older version of Node.js?
+
+You may run into problems during the workshop! An easy way to deal with this is to...
+
+* install [nvm](https://github.com/creationix/nvm) by running
+
+```sh
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+```
+or Wget:
+
+```sh
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+```
+* then restart your terminal
+* then run
+```sh
+nvm install stable
+nvm use stable
+nvm alias default stable
+```
+
 #### Project setup
 
 First, clone this project from Github
