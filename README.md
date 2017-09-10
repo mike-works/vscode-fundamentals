@@ -119,6 +119,16 @@ nvm use stable
 nvm alias default stable
 ```
 
+### What if I get an error like `Please install sqlite3 package manually`?
+
+If you use OS X, it can be installed with [homebew](https://brew.sh/)
+
+```sh
+brew install sqlite3
+```
+
+Windows and Linux users, please install the appropriate [official release](https://sqlite.org/download.html).
+
 #### Project setup
 
 First, clone this project from Github
