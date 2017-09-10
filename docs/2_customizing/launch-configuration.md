@@ -8,10 +8,10 @@
 
 ---
 
-## [launch.json](../../.vscode/launch.json)
-
-* Already saw this when debugging
-* Let's break it down
+## Launch Configuration
+* [launch.json](../../.vscode/launch.json) is where launch and configuration files live
+* We've dealt with launch & config in Debugging exercise 4
+* Let's break it down 🕺:
 ```js
 {
   "type": "node", // Use the "node" debugger
@@ -25,36 +25,36 @@
 <br><br><br><br>
 
 ### `"type:" ?`
-* Only two you need to worry about for now
-  * `"node"` for node
-  * `"chrome"` for chrome
-* Others can be added via extensions
+* 🤔 You will only need to worry about two types for now:
+  * `"node"` for Node
+  * `"chrome"` for Chrome
+* 🔌 Others can be added via extensions
 
 <br><br><br><br>
 
 ### `"runtimeExecutable:" ?`
-* The runtime that you pass your code into, to run
+* 🏃 This is the runtime that you pass your code into, to run
 * Default value: determined by `"type"` of debugger
 * Practical Example: `./node_modules/.bin/ts-node`
 * Usually accompanied by something like `"program": "./index.js"`
 
 <br><br><br><br>
 
-### `"restart:" ?` (node)
-* Automatically re-executes the command when Node terminates
+### `"restart:" ?` (Node)
+* 💻 Automatically re-executes the command when Node terminates
 * In an `"attach"` mode, VS Code will start listening for connections again and preserve your breakpoints
 
 
 <br><br><br><br>
 
 ### Console Options
-* Where does the output go?
+* 👾 Where does the output go?
 ```js
 "console": "integratedTerminal" // "Terminal"
   | "externalTerminal" // your own terminal (must config)
   | "integratedConsole" // "Debug Console"
 ```
-* How to treat the console?
+* 🗄 How can you treat the console at the bottom of the editor:
 ```js
 "internalConsoleOptions": "neverOpen" // Don't open
   | "openOnFirstSessionStart" // Open at first
@@ -63,8 +63,8 @@
 
 <br><br><br><br>
 
-### Args & Environment
-* `"args": []` property takes care of quoting properly
+### Arguments & Environment
+* 🗣 `"args": []` property takes care of quoting properly
 * `"env": {}` object is for environment variables
 * `"cwd": "./"` for working directory
   * Defaults to `"${workspaceRoot}"`
