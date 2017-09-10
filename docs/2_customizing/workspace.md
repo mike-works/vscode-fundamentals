@@ -37,12 +37,24 @@
 * Intellisense will help a lot here
 ```js
 "workbench.colorCustomizations": {
-} 
+  "contrastActiveBorder": "#0ff"
+}
 ```
 * Syntax Hilighting Customizations
 ```js
 "editor.tokenColorCustomizations": {
-    "comments": "#aaa"
+  "comments": "#aaa",
+  "types": "#f66",
+  "textMateRules": [{
+    "scope": "variable.parameter",
+    "settings": {
+      "fontStyle": "bold",
+      "foreground": "#FF0000"
+    }
+  }],
+  "functions": {
+    "fontStyle": "italic"
+  }
 }
 ```
 
@@ -62,6 +74,38 @@
 "terminal.integrated.fontLigatures": true, // optional
 ```
 
+### Keybindings
+* Start with a Keymap from your preferred editor
+  * Search for extensions: `@recommended:keymaps`
+* Basic customizations in Keyboard Shortcuts <key>⌘K ⌘S</key>
+* Advanced customizations in `keybindings.json`
+```js
+{
+  "key": "cmd+z",
+  "command": "undo",
+  "when": "editorTextFocus && !editorReadonly"
+}
+```
+
+<br><br><br><br>
+
+### Code Snippets
+* Prefix is what you'll type (and then hit "tab")
+* `${1:300}` means "first placeholder, which initially has a value of 300"
+* When filling out this template, repeated use of a given placeholder is updated
+```js
+"For Loop": {
+  "prefix": "for",
+  "body": [
+    "for (var ${1:index} = 0; ${1:index} < ${2:array}.length; ${1:index}++) {",
+    "\tvar ${3:element} = ${2:array}[${1:index}];",
+    "\t$0",
+    "}"
+  ],
+  "description": "For Loop"
+},
+```
+
 <br><br><br><br>
 
 ## Exercise: Tune Your Editor
@@ -74,3 +118,6 @@
 > * Design your own syntax highlighting scheme. If you need ideas: https://coolors.co/browser/best/1
 > * Disable the minimap
 > * Disable the indent guides
+> * Create a code snippet for a placeholder image in HTML files
+>    * Shortcut: `ph`
+>    * Result: `<img src='http://placecorgi.com/{x}/{y}' />` where x and y default to 300
