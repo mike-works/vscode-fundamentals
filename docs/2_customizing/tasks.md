@@ -8,15 +8,13 @@
 
 ---
 
-* **Tasks**
-
 
 ## About Tasks
 
 * Run build steps, linting, testing, deploying scripts from within VS Code
 * Anything in a `Gruntfile`, `Gulpfile`, [`package.json`](../../package.json) ("scripts") should be auto-detected
-* Where's the best place for these to live?
-  * Main stuff: package.json or [Scripty](https://github.com/testdouble/scripty)
+* Where's the best place for these files to live?
+  * Main stuff: `package.json` or [Scripty](https://github.com/testdouble/scripty)
   * VS Code specifics layered on top
 * Ability to parse "problems" from output, linking to file and line number
 
@@ -75,7 +73,7 @@
 
 ## Tasks: Capturing output into "problems"
 
-* If the output of this command printed indications of problems in our code (at a particular file/line), we can Command+Click on a file path will open that file
+* If the output of this command printed indications of problems in our code (at a particular file/line), we can use <kbd>Command</kbd> + Click 🖲 on a file path to open that file
 
 ```js
   "taskName": "echo",
@@ -93,15 +91,15 @@
 
 * But what about pointing out problems by line/column?
 
-This task would output something like
+This task would output something like this:
 ```ruby
 client/index.tsx,LINE:8,this line stinks
 ```
-What we need is a regular expression, with "capture groups"
+What we need is a regular expression with [capture groups](http://www.regular-expressions.info/refcapture.html)
 * https://regex101.com/
 * http://regexr.com/
 
-Cheat sheet
+**Cheat sheet**
 ```
 [0-9]        any number
 [w]+         1 or more "w" characters
@@ -109,8 +107,8 @@ Cheat sheet
 [\s\w]+      1 or more "word" or "space"
 LINE:([0-9]+)  grab digits after "LINE:"
 ```
-EXAMPLE:
-If our string is `LINE:31`, and we use a regex like
+**EXAMPLE:**
+If our string is `LINE:31`, and we use a regex:
 ```
 LINE:([0-9]+)
 ```
@@ -121,7 +119,7 @@ LINE:([0-9]+)
 
 <br><br><br><br>
 
-Once we have this, we can use it our task
+Once we have this, we can use it within our task to detect the files, line #s, and specific details for any problems that are found:
 
 ```js
 {
