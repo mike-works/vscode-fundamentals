@@ -7,10 +7,10 @@
 
 ---
 
-## A text editor, maybe a light IDE?
+## A text editor, maybe a light [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)?
 
-Over time we're seeing support for
-   - Task running
+Over time we're seeing support for:
+   - [Task running](https://code.visualstudio.com/docs/editor/tasks)
    - Workspace-specific settings
    - A rich plugin ecosystem
    - Things that analyze your code in the background
@@ -18,11 +18,11 @@ Over time we're seeing support for
 
 <br><br><br><br>
 
-## It's built using web technology, for web developers, the OSS way
+## It's built using web technology, for web developers, the Open Source way
 
 👩‍💻 Delivering on features __and__ an ecosystem that's easy to jump into
 
-🔌 Talks to web technologies more easily (i.e., Node talking to Node)
+🔌 Talks to web technologies more easily (i.e., [Node](https://nodejs.org/en/about/) talking to Node)
 
 📖 Binaries are proprietary, but source code is open source
 
@@ -39,7 +39,7 @@ Over time we're seeing support for
 🤝 Favor open standards over proprietary formats
   - i.e., `.jsconfig`, `.editorconfig`
 
-⌨️ Bring your keybindings with you
+⌨️ Bring your [keybindings](https://code.visualstudio.com/docs/getstarted/keybindings) with you
 
 <br><br><br><br>
 
@@ -59,11 +59,11 @@ Over time we're seeing support for
 
 ## How this course is going to work
 
-Agenda is as follows
+Agenda is as follows:
  1. [Using It](./1_using/)
  2. [Customizing It](./2_customizing/)
 
 New code editing tricks (i.e. `⌘ + D` along the way)
 
-We'll be working with JavaScript *and* typescript.
+We'll be working with JavaScript *and* TypeScript.
   - It's OK (maybe even better) if you don't know TS yet
