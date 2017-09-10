@@ -9,7 +9,7 @@
 ---
 
 ## Launch Configuration
-* [launch.json](../../.vscode/launch.json) is where launch and configuration files live
+* [launch.json](../../.vscode/launch.json) is where launch configurations live
 * We've dealt with launch & config in Debugging exercise 4
 * Let's break it down 🕺:
 ```js
