@@ -18,7 +18,7 @@ Over time we're seeing support for:
 
 <br><br><br><br>
 
-## It's built using web technology, for web developers, the [OSS](https://en.wikipedia.org/wiki/Open-source_software) way
+## It's built using web technology, for web developers, the Open Source way
 
 👩‍💻 Delivering on features __and__ an ecosystem that's easy to jump into
 
