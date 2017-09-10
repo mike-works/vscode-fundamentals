@@ -18,13 +18,13 @@
   * Facebook's [flow](https://github.com/facebook/flow) (static)
   * MicroSoft's [TypeScript](https://www.typescriptlang.org/) (static)
 * TypeScript is a *typed superset* of JavaScript
-  * It heavily relies on type inference
-* [As of TypeScript 2.3](https://github.com/Microsoft/TypeScript/wiki/Type-Checking-JavaScript-Files) VS Code can apply this to your JavaScript
-* Type information can be added via JSDoc comments!
+  * It heavily relies on [type inference](https://en.wikipedia.org/wiki/Type_inference) - the automatic deduction of the data type of an expression.
+* As of [TypeScript 2.3](https://github.com/Microsoft/TypeScript/wiki/Type-Checking-JavaScript-Files) VS Code can apply type checking to your JavaScript
+* Type information can be added via [JSDoc](http://usejsdoc.org/) comments!
 
 <br><br><br><br>
 
-## Why would I want to use types?
+## Why would I want to use Types?
 
 * Catch more bugs at compile time
 * Better developer experience
@@ -36,10 +36,10 @@
 ## Categories of Type Systems
 
 #### Nominal Typing
-Decisions about whether types are equivalent are made based on their **name**.
+Decisions about whether types are equivalent are made based on their **name** - [Nominal type system](https://en.wikipedia.org/wiki/Nominal_type_system).
 
 #### Structural Typing
-Decisions about whether types are equivalent are made based their **structure**.
+Decisions about whether types are equivalent are made based their **structure** - [Structural type system](https://en.wikipedia.org/wiki/Structural_type_system).
 ```ts
 interface CartItem {
   item: {
@@ -51,13 +51,13 @@ interface CartItem {
 }
 ```
 
-Because VS Code uses TypeScript to check our code, and its type system is **structural**.
+Because VS Code uses TypeScript to check our code, it uses **structural** type system.
 
 <br><br><br><br>
 
 
 ## Annotating Types with JSDoc
-* Types can be added with comments
+* Types can be added with comments 📝
 ```js
 /** @type {number} */
 let value;
@@ -85,7 +85,7 @@ let x = document.querySelector('.passwordField');
 ```
 * This would be no problem if `Element`'s structure was a superset of `HTMLInputElement`'s, but it's the other way around.
 * The TypeScript compiler has found that `Element` is lacking the [accept](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept) property
-* We can perform an explicit type conversion (type casting)
+* We can perform an explicit type conversion ([type casting](https://en.wikipedia.org/wiki/Type_conversion))
 
 ```js
 /** @type {HTMLInputElement} */
@@ -106,7 +106,7 @@ let x = /** @type {HTMLInputElement} */(
 ## Functions
 
 * Function is a first-class value type
-* We can also define a structure of a function (args)
+* We can also define a structure of a function (arguments)
 
 ```js
 /** @type {function(MouseEvent)[]} */
@@ -120,7 +120,7 @@ addEventListener('keypress', function(evt) {
   });
 });
 ```
-* Arrow functions can also be used to define argument types
+* Arrow functions `=>` can also be used to define argument types
 ```js
 /** @type {(request: Request) => Response} */
 let requestHandler = function(x) {
@@ -132,7 +132,7 @@ let requestHandler = function(x) {
 
 <br><br><br><br>
 
-## Generics
+## Generics 
 
 * Operate across many types
 * Still maintain compile-time type safety
@@ -157,8 +157,8 @@ objects.push({});
 //   Property 'key' is missing in type '{}'.
 ```
 
-* Promises and other things that wrap other values (which have their own types) are define using this concept of generics
-* Be careful when mixing with JSX!
+* Promises and other things that wrap other values (which have their own types) are defined using this concept of generics
+* Be careful when mixing types with [JSX](https://facebook.github.io/react/docs/introducing-jsx.html)!
 ```js
 /** @type {PromiseLike<Window>} */
 let x;
@@ -176,6 +176,7 @@ x = Promise.resolve(window);
  * @param {string} name
  * @param {number} price
  */
+ 
 /**
  * @typedef {{qty: number, item: InventoryItem}} InvoiceItem
  */
