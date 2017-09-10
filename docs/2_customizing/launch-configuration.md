@@ -54,7 +54,7 @@
   | "externalTerminal" // your own terminal (must config)
   | "integratedConsole" // "Debug Console"
 ```
-* 🗄 How can you treat the console at the bottom of the editor:
+* 🗄 How the console at the bottom of the editor is dealt with:
 ```js
 "internalConsoleOptions": "neverOpen" // Don't open
   | "openOnFirstSessionStart" // Open at first
