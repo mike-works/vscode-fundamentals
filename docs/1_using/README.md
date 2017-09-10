@@ -14,20 +14,20 @@
 
  Let's use it to do some stuff!
 
- Here's our example ![Frontend Grocer](../../public/grocer.png)
- It's a client/server app, built with bleeding edge versions of everything
+ Here's the example we will be working with - a grocery app! ![Frontend Grocer](../../public/grocer.png)
+ It's a client/server app, built with bleeding edge versions of the following:
    - [React 16 (beta)](https://github.com/facebook/react/issues/10294)
    - [Webpack 3](https://webpack.js.org/)
    - [Babel 7](http://babeljs.io/)
    - [TypeScript 2.5](https://blogs.msdn.microsoft.com/typescript/2017/08/31/announcing-typescript-2-5/)
    - [Koa](http://koajs.com/)
 
- This is intended to show you the most modern stuff available. 95% of this can be done in older versions too!
+ This is intended to show you the most modern web tools🔧 available. 95% of this can be done in older versions too!
 
  Take a moment now to ensure you're all set up.
    First, make sure you're running a recent version of Node.js
    ```sh
-   node --version # v7.10.0
+   node --version # v8.0.0 or newer
    ```
    And we need a library called sqlite3 for our database. You can check your version by running
    ```sh
