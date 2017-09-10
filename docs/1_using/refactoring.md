@@ -54,7 +54,7 @@
 
 * Level 1: Find/Replace
 * Level 2: <kbd>Cmd + D</kbd> for selection
-* Level 3: <kbd>F2</kbd> for rename in ALL FILES
+* Level 3: "Extract into function" and <kbd>F2</kbd> for rename in ALL FILES
 
 <br><br><br><br>
 
