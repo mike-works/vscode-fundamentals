@@ -3,7 +3,7 @@
 ## Customizing Visual Studio Code
 
 * 🎨 [Workspace Customization](./workspace.md)
-* ☑️ [Tasks](./tasks.md)
+* ☑️ **Tasks**
 * 🚀 [Launch Configuration](./launch-configuration.md)
 
 ---
@@ -150,7 +150,7 @@ and clicking on the problem should take us right to the appropriate line in the 
 
 <br><br><br><br>
 
-# Exercise 2: TSLint Problems
+# Exercise 6: TSLint Problems
 > * Think of it as "ESLint for TypeScript"
 > * You can run this via `./node_modules/.bin/tslint --project <root of your workspace>`
 > * <details><summary>click for sample output</summary><pre>ERROR: /Users/northm/Development/workshops/vscode/client/components/app-header/index.tsx[22, 7]: Identifier 'cartIcon' is never reassigned; use 'const' instead of 'let'.</pre></details>

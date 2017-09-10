@@ -3,10 +3,10 @@
 # Using Visual Studio Code
 
 * 📄 [Awesome Documents](./markdown.md)
-* ✅ [Type-Checking](./type-checking.md)
-* 🐞 [Debugging](./debugging.md)
 * ⏩ **Emmet**
 * 🎛 [Refactoring](./refactoring.md)
+* ✅ [Type-Checking](./type-checking.md)
+* 🐞 [Debugging](./debugging.md)
 
 ---
 
@@ -140,7 +140,7 @@ And you can even add text to the body of elements, with a placeholder for number
 * Aim for several small expansions, rather than one huge expansion
 * Start basic, and add new shortcuts over time
 
-# Exercise: Rapid Expansion
+# Exercise 1: Rapid Expansion
 <img align=right width=150 src='../../public/emmet/click-for-more.png'>
 
 >  * We want to add a new tile to the right of each category row, as shown here 👉

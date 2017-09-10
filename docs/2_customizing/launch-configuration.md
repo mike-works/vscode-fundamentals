@@ -4,7 +4,7 @@
 
 * 🎨 [Workspace Customization](./workspace.md)
 * ☑️ [Tasks](./tasks.md)
-* 🚀 [Launch Configuration](./launch-configuration.md)
+* 🚀 **Launch Configuration**
 
 ---
 
@@ -85,7 +85,7 @@
 
 
 
-## Exercise: Analyze & Monitor
+## Exercise 7: Analyze & Monitor
 > ### Build two new launch configurations
 >  * Show a bundle analysis visualization
 >    * Ultimately this command needs to be run `ANALYIZE=true node ./server/index.js` (ANALYZE is an environment variable)

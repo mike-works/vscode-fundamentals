@@ -3,10 +3,10 @@
 # Using Visual Studio Code
 
 * 📄 **Awesome Documents**
-* ✅ [Type-Checking](./type-checking.md)
-* 🐞 [Debugging](./debugging.md)
 * ⏩ [Emmet](./emmet.md)
 * 🎛 [Refactoring](./refactoring.md)
+* ✅ [Type-Checking](./type-checking.md)
+* 🐞 [Debugging](./debugging.md)
 
 ---
 

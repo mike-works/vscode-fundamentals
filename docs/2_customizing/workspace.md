@@ -2,7 +2,7 @@
 
 ## Customizing Visual Studio Code
 
-* 🎨 [Workspace Customization](./workspace.md)
+* 🎨 **Workspace Customization**
 * ☑️ [Tasks](./tasks.md)
 * 🚀 [Launch Configuration](./launch-configuration.md)
 
@@ -107,7 +107,7 @@
 
 <br><br><br><br>
 
-## Exercise: Tune Your Editor
+## Exercise 5: Tune Your Editor
 > * Make some UI color customizations, that apply across all projects
 >   * Panel: background `#033`
 >   * Badge: foreground `#000`, background: `#ff0`

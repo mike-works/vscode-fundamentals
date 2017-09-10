@@ -3,10 +3,10 @@
 # Using Visual Studio Code
 
 * 📄 [Awesome Documents](./markdown.md)
-* ✅ [Type-Checking](./type-checking.md)
-* 🐞 [Debugging](./debugging.md)
 * ⏩ [Emmet](./emmet.md)
 * 🎛 **Refactoring**
+* ✅ [Type-Checking](./type-checking.md)
+* 🐞 [Debugging](./debugging.md)
 
 ---
 
@@ -59,7 +59,7 @@
 
 <br><br><br><br>
 
-# Exercise: Refactoring
+# Exercise 2: Refactoring
 > * Make the following changes to [/client/data/listener-support.js](/client/data/listener-support.js)
 >   * `register` and `unregister` should be changed to `registerListener` and `unregisterListener`, respectively
 >   * `fire` should be passed an object of the structure `{data: object[]}`
