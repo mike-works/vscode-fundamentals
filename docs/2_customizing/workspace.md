@@ -9,7 +9,7 @@
 ---
 
 ## Why Customize Your Workspace?
-* Developers spend LOTS of time in thier editor
+* Developers spend LOTS of time in their editor 📝
 * What can configuration do for you?
   * Speed up your workflow
   * Make it easier to read code
@@ -19,8 +19,8 @@
 <br><br><br><br>
 
 ### Levels of customization
-* Workspace `./.vscode/settings.json`
-* User
+*  💻 Workspace `./.vscode/settings.json`
+* 🙍 User
   * Windows `%APPDATA%\Code\User\settings.json`
   * Mac `$HOME/Library/Application Support/Code/User/settings.json`
   * Linux `$HOME/.config/Code/User/settings.json`
@@ -30,16 +30,16 @@
 <br><br><br><br>
 
 ### Themes
-* Color Theme
-* File Icon Theme
-* Customize colors in settings
-* Intellisense will help a lot here
+* 🎨 Color Theme
+* 🗂 File Icon Theme
+* ⚙️ Customize colors in settings
+* 📚 [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense), a variety of code editing features will be helpful  here
 ```js
 "workbench.colorCustomizations": {
   "contrastActiveBorder": "#0ff"
 }
 ```
-* Syntax Hilighting Customizations
+* 🖍 Syntax Highlighting Customizations
 ```js
 "editor.tokenColorCustomizations": {
   "comments": "#aaa",
@@ -76,7 +76,7 @@
 ### Keybindings
 * Start with a Keymap from your preferred editor
   * Search for extensions: `@recommended:keymaps`
-* Basic customizations in Keyboard Shortcuts <key>⌘K ⌘S</key>
+* Basic customizations in Keyboard Shortcuts <kbd>⌘ K</kbd> <kbd>⌘ S</kbd>
 * Advanced customizations in `keybindings.json`
 ```js
 {
@@ -89,7 +89,7 @@
 <br><br><br><br>
 
 ### Code Snippets
-* Prefix is what you'll type (and then hit "tab")
+* Prefix is what you'll type (and then hit <kbd>Tab</kbd>)
 * `${1:300}` means "first placeholder, which initially has a value of 300"
 * When filling out this template, repeated use of a given placeholder is updated
 ```js
