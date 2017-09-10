@@ -1,11 +1,12 @@
-<img align='right' height=100 src='../../public/vscode.jpg'>
+<img align='right' height=100 src='../../../public/vscode.png'>
 
-# Using Visual Studio Code: Type Checking
+# Using Visual Studio Code
 
-* [Debugging](./debugging.md)
-* [Launch Configurations](./launch-configuration.md)
-* [Awesome Documents](./markdown.md)
-* **Type Checking**
+* 📄 [Awesome Documents](./markdown.md)
+* ✅ **Type-Checking**
+* 🐞 [Debugging](./debugging.md)
+* ⏩ [Emmet](./emmet.md)
+* 🎛 [Refactoring](./refactoring.md)
 
 ---
 

@@ -1,12 +1,10 @@
-<img align='right' height=100 src='../../public/vscode.jpg'>
+<img align='right' height=100 src='../../public/vscode.png'>
 
-# Using Visual Studio Code: Launch Configurations
+## Customizing Visual Studio Code
 
-* [Debugging](./debugging.md)
-* **Launch Configurations**
-* [Awesome Documents](./markdown.md)
-* [Type Checking](./type-checking.md)
-* [Tasks](./tasks.md)
+* 🎨 [Workspace Customization](./workspace.md)
+* ☑️ [Tasks](./tasks.md)
+* 🚀 [Launch Configuration](./launch-configuration.md)
 
 ---
 

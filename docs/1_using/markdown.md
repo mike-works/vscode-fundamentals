@@ -1,14 +1,15 @@
-<img align='right' height=100 src='../../public/vscode.jpg'>
+<img align='right' height=100 src='../../../public/vscode.png'>
 
-# Using Visual Studio Code: Awesome Documents
+# Using Visual Studio Code
 
-* [Debugging](./debugging.md)
-* [Launch Configurations](./launch-configuration.md)
-* **Awesome Documents**
-* [Type Checking](./type-checking.md)
-* [Tasks](./tasks.md)
+* 📄 **Awesome Documents**
+* ✅ [Type-Checking](./type-checking.md)
+* 🐞 [Debugging](./debugging.md)
+* ⏩ [Emmet](./emmet.md)
+* 🎛 [Refactoring](./refactoring.md)
 
 ---
+
 ## Images
 
 Normal markdown images

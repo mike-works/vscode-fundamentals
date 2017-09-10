@@ -1,10 +1,9 @@
-<img align='right' height=100 src='../public/vscode.jpg'>
+<img align='right' height=100 src='../public/vscode.png'>
 
 # Visual Studio Code
 
 1. [Using It](./1_using/)
 2. [Customizing It](./2_customizing/)
-3. [Extending It](./3_extending/)
 
 ---
 
@@ -63,7 +62,6 @@ Over time we're seeing support for
 Agenda is as follows
  1. [Using It](./1_using/)
  2. [Customizing It](./2_customizing/)
- 3. [Extending It](./3_extending/)
 
 New code editing tricks (i.e. `⌘ + D` along the way)
 

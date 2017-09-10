@@ -1,11 +1,12 @@
-<img align='right' height=100 src='../../public/vscode.jpg'>
+<img align='right' height=100 src='../../public/vscode.png'>
 
 # Using Visual Studio Code
 
 * 📄 [Awesome Documents](./markdown.md)
-* 🐞 [Debugging](./debugging.md)
-* 🚀 [Launch Configuration](./launch-configuration.md)
 * ✅ [Type-Checking](./type-checking.md)
+* 🐞 [Debugging](./debugging.md)
+* ⏩ [Emmet](./emmet.md)
+* 🎛 [Refactoring](./refactoring.md)
 
 ---
 

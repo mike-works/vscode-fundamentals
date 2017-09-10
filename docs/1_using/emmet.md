@@ -1,3 +1,14 @@
+<img align='right' height=100 src='../../../public/vscode.png'>
+
+# Using Visual Studio Code
+
+* 📄 [Awesome Documents](./markdown.md)
+* ✅ [Type-Checking](./type-checking.md)
+* 🐞 [Debugging](./debugging.md)
+* ⏩ **Emmet**
+* 🎛 [Refactoring](./refactoring.md)
+
+---
 
 ## Emmet Autocompletions
 
