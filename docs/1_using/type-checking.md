@@ -71,7 +71,7 @@ value = '21'; // 🚫 Not Ok
 
 ```js
 /** @type {Element} */
-let x = document.querySelector('passwordField');
+let x = document.querySelector('.passwordField');
 ```
 
 * Sometimes we work with code that provides us with a less specific type than what we want
@@ -79,7 +79,7 @@ let x = document.querySelector('passwordField');
 
 ```js
 /** @type {HTMLInputElement} */
-let x = document.querySelector('passwordField');
+let x = document.querySelector('.passwordField');
 // 🛑 Type 'Element' is not assignable to type 'HTMLInputElement'
 // 🛑 Property 'accept' is missing in type 'Element'.
 ```
