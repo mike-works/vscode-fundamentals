@@ -158,7 +158,7 @@ objects.push({});
 ```
 
 * Promises and other things that wrap other values (which have their own types) are define using this concept of generics
-* Be careful when mising with JSX!
+* Be careful when mixing with JSX!
 ```js
 /** @type {PromiseLike<Window>} */
 let x;
