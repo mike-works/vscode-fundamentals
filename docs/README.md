@@ -65,5 +65,5 @@ Agenda is as follows:
 
 New code editing tricks (i.e. `⌘ + D` along the way)
 
-We'll be working with JavaScript *and* Typescript.
+We'll be working with JavaScript *and* TypeScript.
   - It's OK (maybe even better) if you don't know TS yet
