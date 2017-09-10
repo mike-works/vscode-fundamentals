@@ -52,13 +52,13 @@ Because VS Code is built with web technology, it’s easy for JavaScript and Typ
 And more…
 
 # Are there any documents that go along with this?
-Yes! **[Here are the slides](/docs/Slides.pdf)**, and **[here's a course outline](https://mike.works/course/vs-code-607be6c)**.
+Yes! **[Here are the "slides"](./docs/README.md)**, and **[here's a course outline](https://mike.works/course/vs-code-607be6c)**.
 
 # Setup
 
 Please make sure you have the following software installed before arriving at the workshop or beginning the course.
 
-#### General Packages
+## General Packages
 
 Please make sure you have the following general software installed
 
@@ -69,7 +69,7 @@ Please make sure you have the following general software installed
 | ✔ | [Yarn](https://yarnpkg.com/)  | >= 0.24 | An alternative to [npm](https://github.com/npm/npm) (if you are using nvm: `brew install yarn --without-node`, else use `brew install yarn`) |
 | ✔ | [SQLite](https://sqlite.org/)  | >= 3 | An embedded relational database (hint: `brew install sqlite3`)|
 
-#### VS Code Extensions
+## VS Code Extensions
 
 Additionally, to take advantage of syntax hilighting, static code analysis and other editor features, you'll want to install the latest version of the following VS Code extensions
 
@@ -81,7 +81,7 @@ Additionally, to take advantage of syntax hilighting, static code analysis and o
 |   | [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) | Better file and folder icons |
 |   | [rest-client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) | An in-editor REST client, so we can experiment with our API effortlessly |
 
-#### Global Node.js Packages
+## Global Node.js Packages
 
 Make sure you have these npm packages installed globally. This can be done by running
 
@@ -96,40 +96,7 @@ npm install -g <package-name>
 | ✔ | [eslint-plugin-babel](https://github.com/babel/eslint-plugin-babel)  | ^4.0.0 |
 | ✔ | [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)  | ^7.1.0 |
 
-
-### What if I have an older version of Node.js?
-
-You may run into problems during the workshop! An easy way to deal with this is to...
-
-* install [nvm](https://github.com/creationix/nvm) by running
-
-```sh
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
-```
-or Wget:
-
-```sh
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
-```
-* then restart your terminal
-* then run
-```sh
-nvm install stable
-nvm use stable
-nvm alias default stable
-```
-
-### What if I get an error like `Please install sqlite3 package manually`?
-
-If you use OS X, it can be installed with [homebew](https://brew.sh/)
-
-```sh
-brew install sqlite3
-```
-
-Windows and Linux users, please install the appropriate [official release](https://sqlite.org/download.html).
-
-#### Project setup
+## Project setup
 
 First, clone this project from Github
 
@@ -152,7 +119,42 @@ npm start
 
 and you should see something on `http://localhost:3000`
 
-# Files and Folders
+### Troubleshooting
+
+#### What if I have an older version of Node.js?
+
+You may run into problems during the workshop! An easy way to deal with this is to...
+
+* install [nvm](https://github.com/creationix/nvm) by running
+
+```sh
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+```
+or Wget:
+
+```sh
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+```
+* then restart your terminal
+* then run
+```sh
+nvm install stable
+nvm use stable
+nvm alias default stable
+```
+
+#### What if I get an error like `Please install sqlite3 package manually`?
+
+If you use OS X, it can be installed with [homebew](https://brew.sh/)
+
+```sh
+brew install sqlite3
+```
+
+Windows and Linux users, please install the appropriate [official release](https://sqlite.org/download.html).
+
+
+## Files and Folders
 
 This is a free-standing client/server system, including
 
@@ -183,7 +185,7 @@ This is a free-standing client/server system, including
  └─ .vapid.json        🔐 VAPID private and public keys
 ````
 
-# What are the pieces?
+## What are the pieces?
 
 * [Webpack 3](https://webpack.js.org)
 * [Babel](http://babeljs.io/) 7.x, setup with the [babel-preset-env](https://github.com/babel/babel/tree/7.0/packages/babel-preset-env) plugins, compiling to ES5 JavaScript
@@ -196,7 +198,7 @@ This is a free-standing client/server system, including
 * [SQLite3](https://www.sqlite.org/) - as a lightweight, embedded database (for API)
 * [Koa](http://koajs.com/) - as a HTTP server for our API.
 
-# License
+## License
 While the general license for this project is the BSD 3-clause, the exercises
 themselves are proprietary and are licensed on a per-individual basis, usually
 as a result of purchasing a ticket to a public workshop, or being a participant
@@ -220,7 +222,7 @@ exercises contained within this project to run your own workshops
 * Recording a screencast that contains one or more of this project's exercises 
 
 
-# Copyright
+## Copyright
 
 &copy; 2017 [Mike Works, Inc.](https://mike.works), All Rights Reserved
 
