@@ -1,4 +1,4 @@
-<img align='right' height=100 src='../../../public/vscode.png'>
+<img align='right' height=100 src='../../public/vscode.png'>
 
 # Using Visual Studio Code
 

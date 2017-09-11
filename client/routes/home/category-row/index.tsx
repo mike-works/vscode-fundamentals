@@ -58,6 +58,12 @@ class CategoryRow extends React.Component<ICategoryRowProps, ICategoryRowState> 
           {itemComponents}
           {/* 👇 code for exercise 1 here 👇 */}
 
+          <li className="GroceryItem mui-panel">
+            <h4>Click for more</h4>
+            <span className="click-for-more">
+              <img src={`/images/fallback-${this.props.categoryName.toLowerCase()}.png`} alt="" className="item-image"/>
+            </span>
+          </li>
 
 
 
