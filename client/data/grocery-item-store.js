@@ -89,7 +89,8 @@ export default class GroceryItemStore {
     this._items.forEach(i => {
       itemHash[i.id] = i;
     });
-    /** @type {GroceryItem[]} */(data).forEach(dataItem => itemHash[dataItem.id] = dataItem);
+    let groceryItems = /** @type {GroceryItem[]} */(data);
+    groceryItems.forEach(dataItem => itemHash[dataItem.id] = dataItem);
     this._items = Object.keys(itemHash).map((k) => itemHash[k]);
   }
 

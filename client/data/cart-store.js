@@ -13,9 +13,9 @@ import { endpoint as API_ENDPOINT } from '../utils/api';
  */
 
  /**
- * A class for keeing track of shopping cart state
- * @public
- */
+  * A class for keeing track of shopping cart state
+  * @public
+  */
 export default class CartStore {
   /**
    * Instantiate a new CartStore
