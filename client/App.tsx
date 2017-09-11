@@ -18,8 +18,8 @@ import OrderStore from './data/order-store';
 
 interface IAppState {
   drawerShowing: string;
-  cartItems: ReadonlyArray<any>;
-  orders: ReadonlyArray<any>;
+  cartItems: ArrayLike<any>;
+  orders: ArrayLike<any>;
 }
 
 class App extends React.Component<any, IAppState> {
