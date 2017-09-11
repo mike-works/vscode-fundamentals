@@ -18,6 +18,17 @@
       "name": "Launch Chrome",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceRoot}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "nodemon",
+      "timeout": 30000,
+      "runtimeExecutable": "nodemon",
+      "program": "${workspaceRoot}/server/index.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "openOnFirstSessionStart"
     }
   ]
 }
