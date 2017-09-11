@@ -1,6 +1,17 @@
 import ListenerSupport from './listener-support';
 import { endpoint as API_ENDPOINT } from '../utils/api';
 
+/**
+ * @typedef {Object} GroceryItem
+ * @param {number} id
+ */
+
+/**
+ * @typedef {Object} CartItem
+ * @param {number} qty
+ * @param {GroceryItem} groceryItem
+ */
+
  /**
  * A class for keeing track of shopping cart state
  * @public
@@ -13,6 +24,7 @@ export default class CartStore {
    * @public
    */
   constructor() {
+    /** @type {Array<CartItem>} */
     this._items = []; // Items currently in the cart
     /**
      * Create a ListenerSupport instance, that we can register listeners to
@@ -37,7 +49,7 @@ export default class CartStore {
    * This is a read-only array
    * 
    * @public
-   * @return {ReadonlyArray<any>}
+   * @return {ReadonlyArray<CartItem>}
    */
   get items() {
     return Object.freeze([...this._items]);
