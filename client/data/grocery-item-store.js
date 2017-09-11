@@ -2,6 +2,11 @@ import ListenerSupport from './listener-support';
 import { endpoint as API_ENDPOINT } from '../utils/api';
 
 /**
+ * @typedef {Object} GroceryItem
+ * @param {number} id
+ */
+
+/**
  * A class for keeping track of grocery item state
  * @public
  */
@@ -13,6 +18,7 @@ export default class GroceryItemStore {
    */
   constructor() {
     // restore items to get their initial state
+    /** @type {GroceryItem[]} */
     this._items = [];
     this._restoreItems().then((restoredItems) => {
       this._items = restoredItems;
@@ -83,7 +89,7 @@ export default class GroceryItemStore {
     this._items.forEach(i => {
       itemHash[i.id] = i;
     });
-    data.forEach(dataItem => itemHash[dataItem.id] = dataItem);
+    /** @type {GroceryItem[]} */(data).forEach(dataItem => itemHash[dataItem.id] = dataItem);
     this._items = Object.keys(itemHash).map((k) => itemHash[k]);
   }
 
@@ -122,7 +128,7 @@ export default class GroceryItemStore {
     return fetch(`${API_ENDPOINT}api/grocery/categories`)
       .then((resp) => resp.json())
       .then((jsonData) => {
-        let categories = jsonData.data.map(item => item.category);
+        let categories = /** @type {{category: string}[]} */(jsonData.data).map(item => item.category);
         this._categories = categories;
         this._onCategoriesUpdated();
         return this.categories;
