@@ -61,6 +61,6 @@ export default class OrderStore {
    * @private
    */
   _onOrdersUpdated() {
-    this.orderListeners.fire(this.orders);
+    this.orderListeners.fire({ data: this.orders });
   }
 }
