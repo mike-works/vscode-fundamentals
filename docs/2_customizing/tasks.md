@@ -156,3 +156,6 @@ and clicking on the problem should take us right to the appropriate line in the 
 > 2. Define a regex-based Problem Matcher to capture output, so that any issues found are shown in the "problems" panel
 > 3. Fix all the bugs it points out (Cycle through problems w/ `F8`)
 
+---
+
+NEXT: 🚀 [Launch Configuration](./launch-configuration.md)

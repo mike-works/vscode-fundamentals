@@ -17,6 +17,8 @@
 * Built into VS Code
 * Works in JSX
 
+<br><br><br><br>
+
 ### Emmet: HTML Elements
 * Think of as CSS selectors for DOM generation
 * Cursor usually ends up placed just where you want it to be next
@@ -31,6 +33,8 @@
 <div class="foo"></div>
 ```
 
+<br><br><br><br>
+
 ##### `span.foo#bar`
 ```html
 <span class="foo" id="bar"></span>
@@ -40,6 +44,8 @@
 ```html
 <img src="" alt="">
 ```
+
+<br><br><br><br>
 
 ### Nesting & Sibling
 * Just like in CSS, we can use...
@@ -122,7 +128,7 @@ And you can even add text to the body of elements, with a placeholder for number
 | `p`   | Percent |
 | `e`   | em |
 | `r`   | rem |
-| `x`   | ex |
+| `px`   | px |
 
 * Rule of thumb: first letter of each word for a property
 
@@ -139,6 +145,8 @@ And you can even add text to the body of elements, with a placeholder for number
 * You can create custom shortcuts (more on this later)
 * Aim for several small expansions, rather than one huge expansion
 * Start basic, and add new shortcuts over time
+
+<br><br><br><br>
 
 # Exercise 1: Rapid Expansion
 <img align=right width=150 src='../../public/emmet/click-for-more.png'>
@@ -158,7 +166,10 @@ And you can even add text to the body of elements, with a placeholder for number
 > </li>
 > ```
 > * ⚠️ React likes `className=` not `class=`
-> * ⚠️ You interpolate dynamic and static JSX like this
+> * ⚠️ You interpolate dynamic and static values in JSX like this
 > ````js
 > <img alt={`my value is ${3 + 4}`} />
 > ````
+
+---
+NEXT: 🎛 [Refactoring](./refactoring.md)

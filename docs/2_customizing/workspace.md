@@ -120,3 +120,7 @@
 > * Create a code snippet for a placeholder image in HTML files
 >    * Shortcut: `ph`
 >    * Result: `<img src='http://placecorgi.com/{x}/{y}' />` where x and y default to 300
+
+---
+
+NEXT: ☑️ [Tasks](./tasks.md)

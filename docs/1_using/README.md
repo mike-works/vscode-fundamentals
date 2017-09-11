@@ -18,11 +18,13 @@
  It's a client/server app, built with bleeding edge versions of the following:
    - [React 16 (beta)](https://github.com/facebook/react/issues/10294)
    - [Webpack 3](https://webpack.js.org/)
-   - [Babel 7](http://babeljs.io/)
    - [TypeScript 2.5](https://blogs.msdn.microsoft.com/typescript/2017/08/31/announcing-typescript-2-5/)
    - [Koa](http://koajs.com/)
 
+
  This is intended to show you the most modern web tools🔧 available. 95% of this can be done in older versions too!
+
+ <br> <br> <br> <br>
 
  Take a moment now to ensure you're all set up.
    First, make sure you're running a recent version of Node.js
@@ -48,4 +50,7 @@
    cd vscode
    yarn
    npm start
+   # Open http://localhost:3000
    ```
+
+NEXT: 📄 [Awesome Documents](./markdown.md)

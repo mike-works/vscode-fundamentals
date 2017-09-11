@@ -56,6 +56,11 @@ class CategoryRow extends React.Component<ICategoryRowProps, ICategoryRowState> 
         <h2 className='category-name'>{this.props.categoryName}</h2>
         <ul className='grocery-item-list'>
           {itemComponents}
+          {/* 👇 code for exercise 1 here 👇 */}
+
+
+
+
         </ul>
       </li>
     );

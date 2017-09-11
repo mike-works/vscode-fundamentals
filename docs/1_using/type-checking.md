@@ -16,7 +16,10 @@
 * TypeChecking is becoming increasingly popular
   * React's [proptypes](https://facebook.github.io/react/docs/typechecking-with-proptypes.html) (runtime)
   * Facebook's [flow](https://github.com/facebook/flow) (static)
-  * MicroSoft's [TypeScript](https://www.typescriptlang.org/) (static)
+  * Microsoft's [TypeScript](https://www.typescriptlang.org/) (static)
+
+<br><br><br>
+
 * TypeScript is a *typed superset* of JavaScript
   * It heavily relies on [type inference](https://en.wikipedia.org/wiki/Type_inference) - the automatic deduction of the data type of an expression.
 * As of [TypeScript 2.3](https://github.com/Microsoft/TypeScript/wiki/Type-Checking-JavaScript-Files) VS Code can apply type checking to your JavaScript
@@ -29,6 +32,9 @@
 * Catch more bugs at compile time
 * Better developer experience
 * Your code becomes a better expression of your intent
+```js
+function add(x, y) { /* ? */ }
+```
 * Avoid common situations where your code is de-optimized
 
 <br><br><br><br>
@@ -55,6 +61,16 @@ Because VS Code uses TypeScript to check our code, it uses **structural** type s
 
 <br><br><br><br>
 
+## Activating Type-Checking in VSCode
+
+* If your project already is set up for typescript, just add `"checkJs": true` to your `tsconfig.json`
+* Otherwise, add a comment at the top of your JS file
+```js
+// @ts-check
+```
+
+<br><br><br><br>
+
 
 ## Annotating Types with JSDoc
 * Types can be added with comments 📝
@@ -74,7 +90,16 @@ value = '21'; // 🚫 Not Ok
 let x = document.querySelector('.passwordField');
 ```
 
+<br><br><br>
+
 * Sometimes we work with code that provides us with a less specific type than what we want
+
+```js
+getFruit('orange'); // 🍊
+getFruit('pear');   // 🍐
+getFruit('grapes'); // 🍇
+```
+
 * In the above class, perhaps we really wanted the JavaScript representation of an `<input>`, not just a generic element!
 
 ```js
@@ -128,7 +153,7 @@ let requestHandler = function(x) {
 };
 ```
 * Note that we have defined a return type as well here. We could also have used `@return`
-* **keep in mind:** this is just static analysis. Arguments aren't checked until you try to invoke a function
+* **keep in mind:** this is just static analysis. Functions passed as arguments aren't checked for argument type alignment.
 
 <br><br><br><br>
 
@@ -160,9 +185,9 @@ objects.push({});
 * Promises and other things that wrap other values (which have their own types) are defined using this concept of generics
 * Be careful when mixing types with [JSX](https://facebook.github.io/react/docs/introducing-jsx.html)!
 ```js
-/** @type {PromiseLike<Window>} */
+/** @type {PromiseLike<string>} */
 let x;
-x = Promise.resolve(window);
+x = Promise.resolve('hello world');
 ```
 
 <br><br><br><br>
@@ -208,3 +233,5 @@ invoice.push({bad: 'thing'}); // 🛑
 > * Eliminate all complaints about implicit use of the `any` type (visible in the `problems` and `terminal`)
 > * HINT: `ArrayLike<T>` covers things like `ReadonlyArraay<T>` and `Array<T>`
 
+---
+NEXT: 🐞 [Debugging](./debugging.md)

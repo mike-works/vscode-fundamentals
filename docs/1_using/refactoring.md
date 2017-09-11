@@ -14,8 +14,9 @@
 
 ### Go To
 
-* ...implementation
+* ...file
 * ...definition
+* ...type definition
 * ...symbol
   * ...in file
   * ...in workspace
@@ -26,8 +27,10 @@
 ### Selection
 
 * Select All <kbd>Cmd + A</kbd>
-* Select Next Occurrence <kbd>Cmd + D</kbd>
-* Select All Occurrences <kbd>Cmd + Shift + L</kbd>
+* Select Next Occurrence <kbd>Your KB Here</kbd>
+* Select All Occurrences <kbd>Your KB Here</kbd>
+
+<br><br>
 
 ### Multi-Cursor
 
@@ -35,11 +38,14 @@
 * Box select <kbd>Opt + Shift + Click</kbd>
 * Undo last cursor <kbd>Cmd + U</kbd>
 
+<br><br>
+
 ### Line Manipulation
 
-* Copy Line Below <kbd>Opt + Shift + ⬇️</kbd>
 * Move Line Up <kbd>Opt + ⬆️</kbd>
 * Move Line Down <kbd>Opt + ⬇️</kbd>
+* Copy Line Below <kbd>Opt + Shift + ⬇️</kbd>
+
 
 <br><br><br><br>
 
@@ -66,3 +72,7 @@
 >      * Define a new type for this structure, using `@typedef`
 >      * Ensure that all places in the code that call `fire` are updated to use this new structure
 >      * No code that registers listeners should need to be altered as a consequence of this change
+
+---
+
+NEXT: ✅ [Type-Checking](./type-checking.md)

@@ -9,6 +9,7 @@
     "curly": false,
     "prefer-const": false,
     "max-line-length": [false],
+    "no-consecutive-blank-lines": false,
     "eofline": false,
     "no-trailing-whitespace": [
       false

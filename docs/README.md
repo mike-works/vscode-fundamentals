@@ -32,14 +32,15 @@ Over time we're seeing support for:
 
 ## Learning from past lessons
 
-🚫 Don't make ANOTHER heavy IDE
+* 🚫 Don't make ANOTHER heavy IDE
 
-🔒 Don't impose lots of opinions onto users
+* 🔒 Don't impose lots of opinions onto users
+  * ⌨️ Bring your [keybindings](https://code.visualstudio.com/docs/getstarted/keybindings) with you
 
-🤝 Favor open standards over proprietary formats
+* 🤝 Favor open standards over proprietary formats
   - i.e., `.jsconfig`, `.editorconfig`
 
-⌨️ Bring your [keybindings](https://code.visualstudio.com/docs/getstarted/keybindings) with you
+
 
 <br><br><br><br>
 
@@ -60,8 +61,8 @@ Over time we're seeing support for:
 ## How this course is going to work
 
 Agenda is as follows:
- 1. [Using It](./1_using/)
- 2. [Customizing It](./2_customizing/)
+ 1. [Using It](./1_using/README.md)
+ 2. [Customizing It](./2_customizing/README.md)
 
 New code editing tricks (i.e. `⌘ + D` along the way)
 

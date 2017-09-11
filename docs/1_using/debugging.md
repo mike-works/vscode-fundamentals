@@ -12,7 +12,7 @@
 
 ## Debugging Node
 
-Node has no gui, so the built-in debugging experience is 🤢 (vomoticon). Let's take a look!
+Node has no GUI, so the built-in debugging experience is 🤢 (vomoticon). Let's take a look!
 
 ```sh
 npm run debug
@@ -114,3 +114,7 @@ We can launch this at the same time as our node debugger
 > * Use the above guidelines to create "attach" launch configurations for both Chrome and Node
 > * Find and fix the problem
 > * You should be able to (almost) step from one breakpoint to the other
+
+---
+
+NEXT: 🎨 [Workspace Customization](../2_customizing/workspace.md)
