@@ -1,4 +1,10 @@
-<img align='right' height=100 src='../public/vscode.png'>
+<br><br>
+
+<p align='center'> 
+  <img src='../public/vscode.png'>
+</p>
+
+<br><br><br><br>
 
 # Visual Studio Code
 
