@@ -30,8 +30,8 @@ class App extends React.Component<any, IAppState> {
 
   homeRoute: React.SFC<any> = null;
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super(...arguments);
 
     this.cartStore.itemListeners.register((newItems) => {
       this.setState({cartItems: newItems});
