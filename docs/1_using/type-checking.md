@@ -199,8 +199,12 @@ invoice.push({bad: 'thing'}); // 🛑
 >   * `"checkJs": true` - Type-check JavaScript files
 >   * `"noImplicitAny": true` - Complain about "implicit any" types (i.e., require us to provide an explicit type in spots where the compiler can't infer well enough)
 > * Add a variety of JSDoc type annotations to
->   * [client/data/cart-store.js](../../client/data/cart-store.js) 
->   * [client/data/grocery-item-store.js](../../client/data/grocery-item-store.js) 
->   * [client/data/order-store.js](../../client/data/order-store.js) 
-> * Try to avoid use of the `any` type, if possible
+>   * [client/data/listener-support.js](../../client/data/listener-support.js)
+>     * Type of `this._listeners` be an array of function **with argument types specified** 
+>   * [client/data/grocery-item-store.js](../../client/data/grocery-item-store.js)
+>   * [client/data/cart-store.js](../../client/data/cart-store.js)
+>     * You may find that you need to define a "grocery item" type in this file **and** `grocery-item-store.js`. This is fine.
+>   * [client/data/order-store.js](../../client/data/order-store.js)
+> * Eliminate all complaints about implicit use of the `any` type (visible in the `problems` and `terminal`)
+> * HINT: `ArrayLike<T>` covers things like `ReadonlyArraay<T>` and `Array<T>`
 
