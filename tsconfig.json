@@ -4,6 +4,8 @@
     "jsx": "react",
     "module": "commonjs",
     "sourceMap": true,
+    "checkJs": true,
+    "noImplicitAny": true,
     "noImplicitReturns": true,
     "experimentalDecorators": true,
     "baseUrl": ".",

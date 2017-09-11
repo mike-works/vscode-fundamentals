@@ -19,7 +19,7 @@ class Home extends React.Component<IHomeProps, IHomeState> {
     this.state = { categories: this.props.groceryItemStore.categories };
   }
   componentDidMount() {
-    this.props.groceryItemStore.categoryListeners.register((newCategories) => {
+    this.props.groceryItemStore.categoryListeners.registerListener((newCategories) => {
       this.setState({categories: newCategories});
     });
     this.props.groceryItemStore.updateCategories();

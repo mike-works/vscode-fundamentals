@@ -36,12 +36,12 @@ class CategoryRow extends React.Component<ICategoryRowProps, ICategoryRowState> 
     this.itemUpdateListener = () => {
       this._updateGroceryItems();
     };
-    this.props.groceryItemStore.itemListeners.register(this.itemUpdateListener);
+    this.props.groceryItemStore.itemListeners.registerListener(this.itemUpdateListener);
     this.props.groceryItemStore.updateItemsForCategory(this.props.categoryName, 10);
   }
 
   componentWillUnmount() {
-    this.props.groceryItemStore.itemListeners.unregister(this.itemUpdateListener);
+    this.props.groceryItemStore.itemListeners.unregisterListener(this.itemUpdateListener);
   }
 
   render() {

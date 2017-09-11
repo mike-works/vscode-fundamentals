@@ -33,11 +33,11 @@ class App extends React.Component<any, IAppState> {
   constructor() {
     super(...arguments);
 
-    this.cartStore.itemListeners.register((newItems: any[]) => {
+    this.cartStore.itemListeners.registerListener((newItems: any[]) => {
       this.setState({cartItems: newItems});
     });
 
-    this.orderStore.orderListeners.register((newItems: any[]) => {
+    this.orderStore.orderListeners.registerListener((newItems: any[]) => {
       this.setState({orders: newItems});
     });
 
