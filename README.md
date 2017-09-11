@@ -64,7 +64,7 @@ Please make sure you have the following general software installed
 
 | Required | Library | Version Range | Notes |
 | ------------- | ------------- | ---| --- |
-| ✔ | [Node.js](http://nodejs.com/)  | >= 8.0 | [nvm](https://github.com/creationix/nvm) is highly recommended for managing multiple node versions on a single machine |
+| ✔ | [Node.js](http://nodejs.org/)  | >= 8.0 | [nvm](https://github.com/creationix/nvm) is highly recommended for managing multiple node versions on a single machine |
 | ✔ | [Visual Studio Code](https://code.visualstudio.com/)  | >= 1.14 | We'll be using several specific features of the VS Code editor. We can't force you to use it, but you'll miss out if you don't! |
 | ✔ | [Yarn](https://yarnpkg.com/)  | >= 0.24 | An alternative to [npm](https://github.com/npm/npm) (if you are using nvm: `brew install yarn --without-node`, else use `brew install yarn`) |
 | ✔ | [SQLite](https://sqlite.org/)  | >= 3 | An embedded relational database (hint: `brew install sqlite3`)|
