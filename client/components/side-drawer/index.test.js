@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import SideDrawer from './index';
 import renderer from 'react-test-renderer';

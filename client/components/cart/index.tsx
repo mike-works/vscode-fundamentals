@@ -3,7 +3,7 @@ import CartItem from './cart-item/index';
 
 import './styles.scss';
 
-function formatPrice(price) {
+function formatPrice(price: number) {
   return `$${price.toFixed(2)}`;
 }
 
@@ -18,8 +18,8 @@ interface ICartState {
 }
 
 class Cart extends React.Component<ICartProps, ICartState> {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super(...arguments);
     this.state = { checkoutConfirmVisible: false };
   }
   confirmCheckout() {
@@ -41,11 +41,11 @@ class Cart extends React.Component<ICartProps, ICartState> {
         </ul>
       );
     }
-    const items = cartItems.map((item) => (
+    const items = cartItems.map((item: ICartItem) => (
       <CartItem cartStore={cartStore} key={item.groceryItem.id} cartItem={item} />
     ));
 
-    const grandTotal = cartItems.reduce((tot, item) => {
+    const grandTotal = cartItems.reduce((tot: number, item: ICartItem) => {
       return tot + (item.groceryItem.price * item.qty);
     }, 0);
 

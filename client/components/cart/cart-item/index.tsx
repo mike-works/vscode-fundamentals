@@ -2,13 +2,15 @@ import * as React from 'react';
 import { endpoint as API_ENDPOINT } from '../../../utils/api';
 
 import './styles.scss';
+import CartStore from 'client/data/cart-store';
 
-function CartItem({cartItem, cartStore}) {
+function formatPrice(price: number) {
+  return `$${price.toFixed(2)}`;
+}
+
+function CartItem({cartItem, cartStore}: { cartItem: ICartItem, cartStore: CartStore}) {
   const itemImgUrl = `${API_ENDPOINT}.${cartItem.groceryItem.imageUrl}`;
   const totalPrice = cartItem.qty * cartItem.groceryItem.price;
-  function formatPrice(price) {
-    return `$${price.toFixed(2)}`;
-  }
   return (
     <tr className='sidedrawer-list__item cart-item'>
       <td className='cart-item__qty'>

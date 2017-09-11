@@ -6,11 +6,11 @@ import * as Appbar from 'muicss/lib/react/appbar';
 
 interface IAppHeaderProps {
   doLeftToggle: (event: any) => void;
-  doRightToggle: (event: any) => void
+  doRightToggle: (event: any) => void;
   numItemsInCart: number;
 }
 
-function AppHeader(props) {
+function AppHeader(props: any) {
   const { doLeftToggle, doRightToggle, numItemsInCart } = props;
 
   const appLogo = (

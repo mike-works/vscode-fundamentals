@@ -20,6 +20,7 @@ export default class GroceryItemStore {
     });
 
     // restore categories to get their initial state
+    /** @type {string[]} */
     this._categories = [];
     this._restoreCategories().then((restoredCategories) => {
       this._categories = restoredCategories;
@@ -38,7 +39,7 @@ export default class GroceryItemStore {
    * @public
    */
   get categories() {
-    return Object.freeze(this._categories);
+    return [...this._categories];
   }
 
   /**
@@ -57,11 +58,11 @@ export default class GroceryItemStore {
    * filters results already available locally
    * 
    * @public
-   * @param {any} categoryName name of category to filter by
-   * @param {any} limit maximum number of items to return
+   * @param {string} categoryName name of category to filter by
+   * @param {number} limit maximum number of items to return
    * @return {any} filtered list of items
    */
-  itemsForCategory(categoryName, limit) {
+  itemsForCategory(categoryName, limit = 10) {
     return Promise.resolve(
       this.items
         .filter((item) => item.category.toLowerCase() === categoryName.toLowerCase())

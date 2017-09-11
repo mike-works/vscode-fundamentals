@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import './styles.scss';
 
-function Orders({ orders }) {
+function Orders({ orders }: { orders: Array<{id: string, totalPrice: number, name: string, status: string}> }) {
   const orderItems = orders.map((o) => {
     return (
       <li key={o.id} className='orders-list-item sidedrawer-list__item'>

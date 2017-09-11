@@ -20,6 +20,7 @@
     "space-before-function-paren": false
   },
   "rules": {
+    "prefer-const": false,
     "quotemark": [false, "single", "avoid-escape", "avoid-template"],
     "ordered-imports": false,
     "member-access": false,

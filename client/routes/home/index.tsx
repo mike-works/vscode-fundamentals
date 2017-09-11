@@ -2,18 +2,20 @@ import './styles.scss';
 
 import * as React from 'react';
 import CategoryRow from './category-row';
+import GroceryItemStore from 'client/data/grocery-item-store';
+import CartStore from 'client/data/cart-store';
 
 interface IHomeProps {
-  groceryItemStore: any;
-  cartStore: any;
+  groceryItemStore: GroceryItemStore;
+  cartStore: CartStore;
 }
 interface IHomeState {
-  categories: any[];
+  categories: string[];
 }
 
 class Home extends React.Component<IHomeProps, IHomeState> {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super(...arguments);
     this.state = { categories: this.props.groceryItemStore.categories };
   }
   componentDidMount() {

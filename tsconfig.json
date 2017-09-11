@@ -12,5 +12,5 @@
       "muicss": ["node_modules/muicss/lib/react/*"]
     }
   },
-  "exclude": ["node_modules", "server.js"]
+  "exclude": ["node_modules", "server"]
 }

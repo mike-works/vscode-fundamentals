@@ -17,9 +17,9 @@ import GroceryItemStore from './data/grocery-item-store';
 import OrderStore from './data/order-store';
 
 interface IAppState {
-  drawerShowing: string;
-  cartItems: ArrayLike<any>;
-  orders: ArrayLike<any>;
+  drawerShowing: string | null;
+  cartItems: any[];
+  orders: any[];
 }
 
 class App extends React.Component<any, IAppState> {
@@ -33,18 +33,18 @@ class App extends React.Component<any, IAppState> {
   constructor() {
     super(...arguments);
 
-    this.cartStore.itemListeners.register((newItems) => {
+    this.cartStore.itemListeners.register((newItems: any[]) => {
       this.setState({cartItems: newItems});
     });
 
-    this.orderStore.orderListeners.register((newItems) => {
+    this.orderStore.orderListeners.register((newItems: any[]) => {
       this.setState({orders: newItems});
     });
 
     this.state = {
       drawerShowing: null,
-      cartItems: this.cartStore.items,
-      orders: this.orderStore.orders
+      cartItems: this.cartStore.items as any[],
+      orders: this.orderStore.orders as any[]
     };
     this.toggleLeftDrawer = this.toggleLeftDrawer.bind(this);
     this.toggleRightDrawer = this.toggleRightDrawer.bind(this);

@@ -1,20 +1,35 @@
 import './styles.scss';
 
 import * as React from 'react';
-import GroceryItem from '../../../components/grocery-item';
+import GroceryItemUI from '../../../components/grocery-item';
+import GroceryItemStore from 'client/data/grocery-item-store';
+import CartStore from 'client/data/cart-store';
 
-class CategoryRow extends React.Component<any, any> {
+interface ICategoryRowProps {
+  groceryItemStore: GroceryItemStore;
+  cartStore: CartStore;
+  categoryName: string;
+  className: string;
+}
+
+interface ICategoryRowState {
+  groceryItems: IGroceryItem[];
+}
+
+class CategoryRow extends React.Component<ICategoryRowProps, ICategoryRowState> {
   private itemUpdateListener: () => void;
-  constructor(props) {
-    super(props);
+  constructor() {
+    super(...arguments);
     this.state = {
       groceryItems: []
     };
   }
   _updateGroceryItems() {
-    this.props.groceryItemStore.itemsForCategory(this.props.categoryName).then((groceryItems) => {
-      this.setState({ groceryItems });
-    });
+    this.props.groceryItemStore
+      .itemsForCategory(this.props.categoryName)
+      .then((groceryItems: IGroceryItem[]) => {
+        this.setState({ groceryItems });
+      });
   }
   componentDidMount() {
     this._updateGroceryItems();
@@ -31,7 +46,7 @@ class CategoryRow extends React.Component<any, any> {
 
   render() {
     const itemComponents = this.state.groceryItems.map((item) => (
-      <GroceryItem
+      <GroceryItemUI
         cartStore={this.props.cartStore}
         key={item.id}
         item={item}/>

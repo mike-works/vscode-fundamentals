@@ -1,7 +1,8 @@
 const webpack = require('webpack');
+// @ts-ignore
 const { devMiddleware, hotMiddleware } = require('koa-webpack-middleware');
 const devConfig = require('../webpack.config.dev');
-
+// @ts-ignore
 const compiler = webpack(devConfig);
 
 function dev() {
