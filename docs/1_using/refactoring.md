@@ -69,7 +69,6 @@
 > * Make the following changes to [/client/data/listener-support.js](/client/data/listener-support.js)
 >   * `register` and `unregister` should be changed to `registerListener` and `unregisterListener`, respectively
 >   * `fire` should be passed an object of the structure `{data: object[]}`
->      * Define a new type for this structure, using `@typedef`
 >      * Ensure that all places in the code that call `fire` are updated to use this new structure
 >      * No code that registers listeners should need to be altered as a consequence of this change
 
