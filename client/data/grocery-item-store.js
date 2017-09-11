@@ -159,7 +159,7 @@ export default class GroceryItemStore {
    * @private
    */
   _onItemsUpdated() {
-    this.itemListeners.fire(this.items);
+    this.itemListeners.fire({ data: this.items });
   }
 
   /**
@@ -168,6 +168,6 @@ export default class GroceryItemStore {
    * @private
    */
   _onCategoriesUpdated() {
-    this.categoryListeners.fire(this.categories);
+    this.categoryListeners.fire({ data: this.categories });
   }
 }

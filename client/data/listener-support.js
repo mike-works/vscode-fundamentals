@@ -12,7 +12,7 @@ export default class ListenerSupport {
    * Register a listener
    * @return {void}
    */
-  register(listener) {
+  registerListener(listener) {
     this._listeners.push(listener);
   }
 
@@ -20,7 +20,7 @@ export default class ListenerSupport {
    * Un-register a listener
    * @return {void}
    */
-  unregister(listener) {
+  unregisterListener(listener) {
     let idx = this._listeners.findIndex((x) => x === listener);
     this._listeners.splice(idx, 1);
   }
@@ -30,7 +30,7 @@ export default class ListenerSupport {
    * @see #register 
    */
   fire(payload) {
-    this._listeners.forEach((x) => x(payload));
+    this._listeners.forEach((x) => x(payload.data));
   }
 }
 
