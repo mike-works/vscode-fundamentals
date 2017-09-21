@@ -45,7 +45,7 @@ function add(x, y) { /* ? */ }
 Decisions about whether types are equivalent are made based on their **name** - [Nominal type system](https://en.wikipedia.org/wiki/Nominal_type_system).
 
 #### Structural Typing
-Decisions about whether types are equivalent are made based their **structure** - [Structural type system](https://en.wikipedia.org/wiki/Structural_type_system).
+Decisions about whether types are equivalent are made based on their **structure** - [Structural type system](https://en.wikipedia.org/wiki/Structural_type_system).
 ```ts
 interface CartItem {
   item: {
