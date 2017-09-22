@@ -198,8 +198,8 @@ x = Promise.resolve('hello world');
 ```js
 /**
  * @typedef {Object} InventoryItem
- * @param {string} name
- * @param {number} price
+ * @prop {string} name
+ * @prop {number} price
  */
  
 /**
