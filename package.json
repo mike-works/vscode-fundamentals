@@ -59,7 +59,7 @@
     "css-loader": "^0.28.5",
     "csv-parse": "^1.2.1",
     "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
+    "file-loader": "^1.1.0",
     "html-webpack-plugin": "^2.30.1",
     "koa-webpack-middleware": "^1.0.7",
     "muicss": "^0.9.24",
