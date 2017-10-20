@@ -57,7 +57,7 @@
     "@types/webpack-bundle-analyzer": "^2.9.0",
     "awesome-typescript-loader": "^3.2.3",
     "css-loader": "^0.28.5",
-    "csv-parse": "^1.2.1",
+    "csv-parse": "^2.0.0",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.30.1",
