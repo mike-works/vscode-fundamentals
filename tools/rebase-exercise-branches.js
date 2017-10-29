@@ -9,7 +9,6 @@ const EXERCISE_SETS = {
     'femasters/2-begin', 'femasters/2-complete',
     'femasters/3-begin', 'femasters/3-complete',
     'femasters/4-begin', 'femasters/4-complete',
-    'femasters/5-begin', 'femasters/5-complete',
     'femasters/6-begin', 'femasters/6-complete',
     'femasters/7-begin', 'femasters/7-complete',
     'femasters/final'
@@ -20,7 +19,6 @@ const EXERCISE_SETS = {
     'linkedin/2-begin', 'linkedin/2-complete',
     'linkedin/3-begin', 'linkedin/3-complete',
     'linkedin/4-begin', 'linkedin/4-complete',
-    'linkedin/5-begin', 'linkedin/5-complete',
     'linkedin/6-begin', 'linkedin/6-complete',
     'linkedin/7-begin', 'linkedin/7-complete',
     'linkedin/final'
