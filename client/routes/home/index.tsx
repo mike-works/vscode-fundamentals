@@ -10,7 +10,7 @@ interface IHomeProps {
   cartStore: CartStore;
 }
 interface IHomeState {
-  categories: string[];
+  categories: ArrayLike<any>;
 }
 
 class Home extends React.Component<IHomeProps, IHomeState> {
@@ -26,7 +26,7 @@ class Home extends React.Component<IHomeProps, IHomeState> {
   }
 
   render() {
-    const categoryRows = this.state.categories.map((c) => (
+    const categoryRows = (this.state.categories as any[]).map((c) => (
       <CategoryRow
         className='category-list__item'
         key={c}
