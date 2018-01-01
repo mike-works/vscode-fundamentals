@@ -11,10 +11,10 @@
 
 <p align='center'>
   <a href="https://greenkeeper.io/" title="Dependencies">
-    <img title="Greenkeeper" src="https://badges.greenkeeper.io/mike-north/vscode-fundamentals.svg"/>
+    <img title="Greenkeeper" src="https://badges.greenkeeper.io/mike-works/vscode-fundamentals.svg"/>
   </a>
-  <a href="https://travis-ci.org/mike-north/vscode-fundamentals" title="Build Status">
-    <img title="Build Status" src="https://travis-ci.org/mike-north/vscode-fundamentals.svg?branch=solution"/>
+  <a href="https://travis-ci.org/mike-works/vscode-fundamentals" title="Build Status">
+    <img title="Build Status" src="https://travis-ci.org/mike-works/vscode-fundamentals.svg?branch=solution"/>
   </a>
   <a href="https://mike.works/course/vs-code-607be6c" title="Modern JavaScript">
     <img title="Course Outline" src="https://img.shields.io/badge/mike.works-course%20outline-blue.svg"/>
@@ -102,7 +102,7 @@ npm install -g <package-name>
 First, clone this project from Github
 
 ```
-git clone https://github.com/mike-north/vscode-fundamentals vscode
+git clone https://github.com/mike-works/vscode-fundamentals vscode
 cd vscode
 ```
 

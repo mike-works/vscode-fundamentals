@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mike-north/vscode-fundamentals.git"
+    "url": "git+https://github.com/mike-works/vscode-fundamentals.git"
   },
   "keywords": [
     "vscode",
@@ -23,9 +23,9 @@
   "author": "Mike North <michael.l.north@gmail.com> (https://mike.works)",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/mike-north/vscode-fundamentals/issues"
+    "url": "https://github.com/mike-works/vscode-fundamentals/issues"
   },
-  "homepage": "https://github.com/mike-north/vscode-fundamentals#readme",
+  "homepage": "https://github.com/mike-works/vscode-fundamentals#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "commander": "^2.11.0",
