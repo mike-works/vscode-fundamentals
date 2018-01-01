@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - 'stable'
-
+cache: yarn
 script: npm test
 
 before_install: yarn global add greenkeeper-lockfile@1
