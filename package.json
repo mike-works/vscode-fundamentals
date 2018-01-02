@@ -48,7 +48,7 @@
     "@types/koa-bodyparser": "^3.0.24",
     "@types/koa-mount": "^2.0.18",
     "@types/koa-router": "^7.0.22",
-    "@types/koa-static": "^3.0.1",
+    "@types/koa-static": "^4.0.0",
     "@types/react": "^16.0.18",
     "@types/react-dom": "^16.0.2",
     "@types/sequelize": "^4.0.73",
