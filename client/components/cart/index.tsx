@@ -18,8 +18,8 @@ interface ICartState {
 }
 
 class Cart extends React.Component<ICartProps, ICartState> {
-  constructor() {
-    super(...arguments);
+  constructor(opts) {
+    super(opts);
     this.state = { checkoutConfirmVisible: false };
   }
   confirmCheckout() {

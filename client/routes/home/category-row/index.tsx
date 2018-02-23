@@ -18,8 +18,8 @@ interface ICategoryRowState {
 
 class CategoryRow extends React.Component<ICategoryRowProps, ICategoryRowState> {
   private itemUpdateListener: () => void;
-  constructor() {
-    super(...arguments);
+  constructor(opts) {
+    super(opts);
     this.state = {
       groceryItems: []
     };

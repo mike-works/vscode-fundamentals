@@ -14,8 +14,8 @@ interface IHomeState {
 }
 
 class Home extends React.Component<IHomeProps, IHomeState> {
-  constructor() {
-    super(...arguments);
+  constructor(opts) {
+    super(opts);
     this.state = { categories: this.props.groceryItemStore.categories };
   }
   componentDidMount() {
