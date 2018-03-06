@@ -127,11 +127,18 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa-static@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@types/koa-static/-/koa-static-3.0.1.tgz#cb299b8c92fcdfb233f85866f88b6b126d5ee5e7"
+"@types/koa-send@*":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@types/koa-send/-/koa-send-4.1.1.tgz#88f57cbe0343c8204903f9096d8ff6b98ec3296f"
   dependencies:
     "@types/koa" "*"
+
+"@types/koa-static@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/koa-static/-/koa-static-4.0.0.tgz#4cddce6adf45221bacfb2842b3621dc92f4d642c"
+  dependencies:
+    "@types/koa" "*"
+    "@types/koa-send" "*"
 
 "@types/koa@*", "@types/koa@^2.0.39":
   version "2.0.39"
