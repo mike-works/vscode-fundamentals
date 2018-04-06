@@ -54,7 +54,7 @@
     "@types/sequelize": "^4.0.73",
     "@types/webpack": "^3.0.9",
     "@types/webpack-bundle-analyzer": "^2.9.0",
-    "awesome-typescript-loader": "^3.2.3",
+    "awesome-typescript-loader": "^5.0.0",
     "css-loader": "^0.28.5",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.5",
