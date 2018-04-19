@@ -16,16 +16,20 @@
   <a href="https://travis-ci.org/mike-works/vscode-fundamentals" title="Build Status">
     <img title="Build Status" src="https://travis-ci.org/mike-works/vscode-fundamentals.svg?branch=solution"/>
   </a>
-  <a href="https://mike.works/course/vs-code-607be6c" title="Modern JavaScript">
+  <a href="https://mike.works/course/vs-code-607be6c" title="VS Code Fundamentals">
     <img title="Course Outline" src="https://img.shields.io/badge/mike.works-course%20outline-blue.svg"/>
   </a>
-  <a href="https://docs.mike.works/vscode-fundamentals" title="Slides">
+  <a href="https://github.com/mike-works/vscode-fundamentals/tree/master/docs" title="Slides">
     <img title="Slides" src="https://img.shields.io/badge/mike.works-slides-blue.svg"/>
   </a>
 </p>
 <p align='center'>
 This is the example project used for the <a title="Mike Works, Inc." href="https://mike.works">Mike Works</a> <a title="Visual Studio Code Fundamentals" href="https://mike.works/course/vs-code-607be6c">Visual Studio Code</a> course.
 </p>
+
+# Course outline and slides
+ * [View course outline here](https://mike.works/course/vs-code-607be6c)
+ * [View slides here](https://github.com/mike-works/vscode-fundamentals/tree/master/docs)
 
 # About This Workshop
 
@@ -50,9 +54,6 @@ Because VS Code is built with web technology, it’s easy for JavaScript and Typ
 * Get a tour of plugins so powerful, after using them you’ll wonder how you ever lived without them!
 * Build your own “code snippet” extension
 And more…
-
-# Are there any documents that go along with this?
-Yes! **[Here are the "slides"](./docs/README.md)**, and **[here's a course outline](https://mike.works/course/vs-code-607be6c)**.
 
 # Setup
 
