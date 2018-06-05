@@ -50,7 +50,7 @@
     "@types/koa-router": "^7.0.22",
     "@types/koa-static": "^4.0.0",
     "@types/react": "^15.0.0",
-    "@types/react-dom": "^15.0.0",
+    "@types/react-dom": "^16.0.6",
     "@types/sequelize": "^4.0.73",
     "@types/webpack": "^3.0.9",
     "@types/webpack-bundle-analyzer": "^2.9.0",
