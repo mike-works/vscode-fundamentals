@@ -68,7 +68,7 @@
     "react-test-renderer": "^15.0.0",
     "sass-loader": "^6.0.6",
     "source-map-loader": "^0.2.1",
-    "style-loader": "^0.19.0",
+    "style-loader": "^0.22.0",
     "ts-node": "^4.0.0",
     "tslint": "^5.7.0",
     "tslint-microsoft-contrib": "^5.0.1",
