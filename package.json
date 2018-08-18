@@ -39,7 +39,7 @@
     "sqlite3": "^3.1.9"
   },
   "devDependencies": {
-    "@types/commander": "^2.9.1",
+    "@types/commander": "^2.12.2",
     "@types/csv-parse": "^1.1.9",
     "@types/debug": "^0.0.30",
     "@types/extract-text-webpack-plugin": "^3.0.0",
