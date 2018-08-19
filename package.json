@@ -1,20 +1,22 @@
 {
-  "name": "vscode-fundamentals",
-  "version": "1.0.0",
+  "name": "@mike-works/vscode-fundamentals",
+  "version": "0.0.0-development",
   "description": "Mike Works, Inc. Visual Studio Code Course",
   "main": "./server/index.js",
   "scripts": {
     "start": "node ./server/index.js",
     "debug": "node debug ./server/index.js",
     "debug:inspect": "node --inspect --inspect-brk ./server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "engines": {
     "node": ">= 8.4.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mike-works/vscode-fundamentals.git"
+    "url": "https://github.com/mike-works/vscode-fundamentals.git"
   },
   "keywords": [
     "vscode",
@@ -36,7 +38,7 @@
     "koa-router": "^7.4.0",
     "koa-static": "^4.0.3",
     "sequelize": "^4.38.0",
-    "sqlite3": "^3.1.13"
+    "sqlite3": "^4.0.0"
   },
   "devDependencies": {
     "@types/commander": "^2.12.2",
@@ -58,7 +60,7 @@
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
-    "html-webpack-plugin": "^2.30.1",
+    "html-webpack-plugin": "^3.0.0",
     "koa-webpack-middleware": "^1.0.7",
     "muicss": "^0.9.39",
     "node-sass": "^4.9.3",
@@ -74,6 +76,11 @@
     "tslint-microsoft-contrib": "^5.2.0",
     "typescript": "^2.9.2",
     "webpack": "^3.12.0",
-    "webpack-bundle-analyzer": "^2.13.1"
+    "webpack-bundle-analyzer": "^2.13.1",
+    "travis-deploy-once": "^5.0.2",
+    "semantic-release": "^15.9.9"
+  },
+  "release": {
+    "extends": "@mike-works/workshop-semantic-release-config"
   }
 }
