@@ -10,17 +10,11 @@
 </p>
 
 <p align='center'>
-  <a href="https://greenkeeper.io/" title="Dependencies">
-    <img title="Greenkeeper" src="https://badges.greenkeeper.io/mike-works/vscode-fundamentals.svg"/>
-  </a>
   <a href="https://travis-ci.org/mike-works/vscode-fundamentals" title="Build Status">
     <img title="Build Status" src="https://travis-ci.org/mike-works/vscode-fundamentals.svg?branch=solution"/>
   </a>
-  <a href="https://mike.works/course/vs-code-607be6c" title="VS Code Fundamentals">
-    <img title="Course Outline" src="https://img.shields.io/badge/mike.works-course%20outline-blue.svg"/>
-  </a>
-  <a href="https://github.com/mike-works/vscode-fundamentals/tree/master/docs" title="Slides">
-    <img title="Slides" src="https://img.shields.io/badge/mike.works-slides-blue.svg"/>
+  <a href="https://github.com/mike-works/vscode-fundamentals/releases" title="Version">
+    <img title="Version" src="https://img.shields.io/github/tag/mike-works/vscode-fundamentals.svg" />
   </a>
 </p>
 <p align='center'>
