@@ -282,17 +282,31 @@
   version "10.7.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.7.1.tgz#b704d7c259aa40ee052eec678758a68d07132a2e"
 
+"@types/prop-types@*":
+  version "15.5.5"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.5.tgz#17038dd322c2325f5da650a94d5f9974943625e3"
+  dependencies:
+    "@types/react" "*"
+
 "@types/range-parser@*":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.2.tgz#fa8e1ad1d474688a757140c91de6dace6f4abc8d"
 
-"@types/react-dom@^15.5.8":
-  version "15.5.8"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-15.5.8.tgz#e2fe3d95fc443c2dc2786eba99223f4e0eeeac22"
+"@types/react-dom@^16.0.7":
+  version "16.0.7"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.7.tgz#54d0f867a76b90597e8432030d297982f25c20ba"
   dependencies:
-    "@types/react" "^15"
+    "@types/node" "*"
+    "@types/react" "*"
 
-"@types/react@^15", "@types/react@^15.6.19":
+"@types/react@*":
+  version "16.4.11"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.11.tgz#330f3d864300f71150dc2d125e48644c098f8770"
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
+"@types/react@^15.6.19":
   version "15.6.19"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-15.6.19.tgz#a5de18afe65b0f29767328836b48c498a5d3a91b"
 
@@ -2162,6 +2176,10 @@ csso@~2.3.1:
   dependencies:
     clap "^1.0.9"
     source-map "^0.5.3"
+
+csstype@^2.2.0:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.6.tgz#2ae1db2319642d8b80a668d2d025c6196071e788"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
