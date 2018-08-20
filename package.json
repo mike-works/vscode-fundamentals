@@ -68,7 +68,7 @@
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
     "react-test-renderer": "^15.0.0",
-    "sass-loader": "^6.0.7",
+    "sass-loader": "^7.1.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.22.1",
     "ts-node": "^4.1.0",
