@@ -70,7 +70,7 @@
     "react-test-renderer": "^15.0.0",
     "sass-loader": "^6.0.7",
     "source-map-loader": "^0.2.4",
-    "style-loader": "^0.19.1",
+    "style-loader": "^0.22.1",
     "ts-node": "^4.1.0",
     "tslint": "^5.11.0",
     "tslint-microsoft-contrib": "^5.2.0",
