@@ -233,9 +233,9 @@
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@types/koa-compose/-/koa-compose-3.2.2.tgz#dc106e000bbf92a3ac900f756df47344887ee847"
 
-"@types/koa-mount@^2.0.19":
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/@types/koa-mount/-/koa-mount-2.0.19.tgz#d71e3cf503d0d6acff7abdc9743065ad8d671bf2"
+"@types/koa-mount@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/koa-mount/-/koa-mount-3.0.1.tgz#2c068d1696b173c62c316158210c4316c4401f57"
   dependencies:
     "@types/koa" "*"
 
