@@ -9,6 +9,16 @@
     camelcase "^5.0.0"
     prettier "^1.13.7"
 
+"@mike-works/workshop-semantic-release-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@mike-works/workshop-semantic-release-config/-/workshop-semantic-release-config-1.0.0.tgz#7b4aeaec917a758428da98c3e838c0a5da64a97d"
+  dependencies:
+    "@semantic-release/changelog" "^3.0.0"
+    "@semantic-release/error" "^2.2.0"
+    "@semantic-release/exec" "^3.0.2"
+    "@semantic-release/git" "^7.0.1"
+    "@semantic-release/github" "^5.0.2"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -34,6 +44,15 @@
     node-fetch "^2.1.1"
     url-template "^2.0.8"
 
+"@semantic-release/changelog@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-3.0.0.tgz#e01514b517e775cea47aef7df5f5685c7aff2bf2"
+  dependencies:
+    "@semantic-release/error" "^2.1.0"
+    aggregate-error "^1.0.0"
+    fs-extra "^7.0.0"
+    lodash "^4.17.4"
+
 "@semantic-release/commit-analyzer@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/commit-analyzer/-/commit-analyzer-6.0.0.tgz#e26ef70938059f03525573560f65212164953121"
@@ -45,11 +64,36 @@
     import-from "^2.1.0"
     lodash "^4.17.4"
 
-"@semantic-release/error@^2.2.0":
+"@semantic-release/error@^2.1.0", "@semantic-release/error@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.2.0.tgz#ee9d5a09c9969eade1ec864776aeda5c5cddbbf0"
 
-"@semantic-release/github@^5.0.0":
+"@semantic-release/exec@^3.0.2":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@semantic-release/exec/-/exec-3.1.0.tgz#7cd10fca3936d7766fb7a2755bd05a0a1f2256da"
+  dependencies:
+    "@semantic-release/error" "^2.1.0"
+    debug "^3.1.0"
+    execa "^0.10.0"
+    lodash "^4.17.4"
+    parse-json "^4.0.0"
+
+"@semantic-release/git@^7.0.1":
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.1.tgz#18ff915552b022f72ef5c2063d0e85f046ee8be0"
+  dependencies:
+    "@semantic-release/error" "^2.1.0"
+    aggregate-error "^1.0.0"
+    debug "^3.1.0"
+    dir-glob "^2.0.0"
+    execa "^0.10.0"
+    fs-extra "^7.0.0"
+    globby "^8.0.1"
+    lodash "^4.17.4"
+    micromatch "^3.1.4"
+    p-reduce "^1.0.0"
+
+"@semantic-release/github@^5.0.0", "@semantic-release/github@^5.0.2":
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-5.0.2.tgz#3a3a4bb7e86fc1dc31829daf5066a232e2097e5b"
   dependencies:
@@ -3164,7 +3208,7 @@ globals@^9.18.0:
   version "9.18.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-9.18.0.tgz#aa3896b3e69b487f17e31ed2143d69a8e30c2d8a"
 
-globby@^8.0.0:
+globby@^8.0.0, globby@^8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/globby/-/globby-8.0.1.tgz#b5ad48b8aa80b35b814fc1281ecc851f1d2b5b50"
   dependencies:
