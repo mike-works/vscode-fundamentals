@@ -8,7 +8,7 @@
     "debug": "node debug ./server/index.js",
     "debug:inspect": "node --inspect --inspect-brk ./server/index.js",
     "build": "./node_modules/.bin/webpack --config webpack.config.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "npm run-script build",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
