@@ -4,3 +4,4 @@ node_modules
 yarn-error*
 db/development.sqlite
 tocopy*
+package-lock.json

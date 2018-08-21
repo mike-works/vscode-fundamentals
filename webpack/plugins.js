@@ -12,7 +12,6 @@ let plugins = [
   new webpack.optimize.OccurrenceOrderPlugin(false),
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NoEmitOnErrorsPlugin(),
-  extractSass
 ];
 
 if (process.env.ANALYZE) {
