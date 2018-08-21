@@ -1,9 +1,8 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const extractSass = require('./extract-sass');
 
 module.exports = {
-  loaders: [
+  rules: [
     // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
     { test: /\.tsx?$/, loader: 'awesome-typescript-loader'},
 
@@ -11,17 +10,15 @@ module.exports = {
     { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader'},
     {
       test: /\.scss$/,
-      use: extractSass.extract({
-        fallback: 'style-loader',
-        use: [{
-          loader: 'css-loader'
-        }, {
-          loader: 'sass-loader',
+      use: [
+        { loader: 'style-loader' },
+        { loader: 'css-loader' },
+        { loader: 'sass-loader',
           options: {
             includePaths: ['node_modules/muicss/lib/sass']
           }
-        }]
-      })
+        }
+      ]
     }
   ]
 };
