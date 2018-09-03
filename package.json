@@ -74,7 +74,7 @@
     "semantic-release": "^15.9.11",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.0",
-    "travis-deploy-once": "^5.0.2",
+    "travis-deploy-once": "^5.0.7",
     "ts-node": "^7.0.0",
     "tslint": "^5.11.0",
     "tslint-microsoft-contrib": "^5.2.1",
