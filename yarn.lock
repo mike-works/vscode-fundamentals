@@ -895,9 +895,9 @@
   version "0.2.28"
   resolved "https://registry.yarnpkg.com/@types/relateurl/-/relateurl-0.2.28.tgz#6bda7db8653fa62643f5ee69e9f69c11a392e3a6"
 
-"@types/sequelize@^4.27.24":
-  version "4.27.24"
-  resolved "https://registry.yarnpkg.com/@types/sequelize/-/sequelize-4.27.24.tgz#7d593c062c368f570c68b0217f5c1d4c892ead48"
+"@types/sequelize@^4.27.25":
+  version "4.27.25"
+  resolved "https://registry.yarnpkg.com/@types/sequelize/-/sequelize-4.27.25.tgz#df18658ccb195c375bf16a6828e50a16e710b2b2"
   dependencies:
     "@types/bluebird" "*"
     "@types/continuation-local-storage" "*"
