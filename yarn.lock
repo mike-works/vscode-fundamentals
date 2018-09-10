@@ -2641,11 +2641,11 @@ entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
-env-ci@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-2.1.1.tgz#73c42c0f3ee4813457210a8440a2ee1bbea0102a"
+env-ci@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-2.4.0.tgz#1ceacee17a6860fffa04436cea586d15534b4c4d"
   dependencies:
-    execa "^0.10.0"
+    execa "^1.0.0"
     java-properties "^0.2.9"
 
 err-code@^1.0.0:
@@ -6543,9 +6543,9 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
-semantic-release@^15.9.11:
-  version "15.9.11"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.9.11.tgz#089a4b419aac3d4b363f5ebc8be2829085d9bef7"
+semantic-release@^15.9.14:
+  version "15.9.14"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.9.14.tgz#108fa88649e318b85f728adc9375b12d68075726"
   dependencies:
     "@semantic-release/commit-analyzer" "^6.0.0"
     "@semantic-release/error" "^2.2.0"
@@ -6555,7 +6555,7 @@ semantic-release@^15.9.11:
     aggregate-error "^1.0.0"
     cosmiconfig "^5.0.1"
     debug "^3.1.0"
-    env-ci "^2.0.0"
+    env-ci "^2.4.0"
     execa "^1.0.0"
     figures "^2.0.0"
     find-versions "^2.0.0"
