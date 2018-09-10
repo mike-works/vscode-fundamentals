@@ -71,7 +71,7 @@
     "react-dom": "^16.0.0",
     "react-test-renderer": "^16.4.2",
     "sass-loader": "^7.1.0",
-    "semantic-release": "^15.9.11",
+    "semantic-release": "^15.9.14",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.0",
     "travis-deploy-once": "^5.0.7",
