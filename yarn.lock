@@ -824,9 +824,9 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa-router@^7.0.31":
-  version "7.0.31"
-  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.0.31.tgz#afe279634cca7b4536be38cf641f35f58a4bc5ee"
+"@types/koa-router@^7.0.32":
+  version "7.0.32"
+  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.0.32.tgz#a2d8adc65ad3d58aeb94d056650920c085817697"
   dependencies:
     "@types/koa" "*"
 
