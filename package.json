@@ -53,7 +53,7 @@
     "@types/koa-mount": "^3.0.1",
     "@types/koa-router": "^7.0.32",
     "@types/koa-static": "^4.0.0",
-    "@types/react": "^16.4.13",
+    "@types/react": "^16.4.16",
     "@types/react-dom": "^16.0.8",
     "@types/sequelize": "^4.27.25",
     "@types/webpack": "^4.4.11",
