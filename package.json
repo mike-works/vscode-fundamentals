@@ -69,7 +69,7 @@
     "nodemon": "^1.18.4",
     "react": "^16.5.0",
     "react-dom": "^16.5.1",
-    "react-test-renderer": "^16.5.0",
+    "react-test-renderer": "^16.5.2",
     "sass-loader": "^7.1.0",
     "semantic-release": "^15.9.17",
     "source-map-loader": "^0.2.4",
