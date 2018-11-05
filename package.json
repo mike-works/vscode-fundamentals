@@ -67,7 +67,7 @@
     "muicss": "^0.9.41",
     "node-sass": "^4.9.4",
     "nodemon": "^1.18.4",
-    "react": "^16.5.0",
+    "react": "^16.6.0",
     "react-dom": "^16.5.1",
     "react-test-renderer": "^16.6.0",
     "sass-loader": "^7.1.0",
