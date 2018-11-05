@@ -39,7 +39,7 @@
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "sequelize": "^4.41.0",
-    "sqlite3": "^4.0.0"
+    "sqlite3": "^4.0.3"
   },
   "devDependencies": {
     "@mike-works/workshop-semantic-release-config": "^1.0.0",
