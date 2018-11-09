@@ -31,7 +31,7 @@
   "homepage": "https://github.com/mike-works/vscode-fundamentals#readme",
   "dependencies": {
     "babel-runtime": "6.26.0",
-    "commander": "2.18.0",
+    "commander": "2.19.0",
     "debug": "4.0.1",
     "koa": "2.6.1",
     "koa-bodyparser": "4.2.1",
