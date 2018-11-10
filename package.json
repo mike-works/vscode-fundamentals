@@ -38,7 +38,7 @@
     "koa-mount": "4.0.0",
     "koa-router": "7.4.0",
     "koa-static": "5.0.0",
-    "sequelize": "4.41.0",
+    "sequelize": "4.41.1",
     "sqlite3": "4.0.3"
   },
   "devDependencies": {
@@ -56,7 +56,7 @@
     "@types/koa-static": "4.0.0",
     "@types/react": "16.4.18",
     "@types/react-dom": "16.0.9",
-    "@types/sequelize": "4.27.25",
+    "@types/sequelize": "4.27.30",
     "@types/webpack": "4.4.18",
     "@types/webpack-bundle-analyzer": "2.13.0",
     "awesome-typescript-loader": "5.2.1",

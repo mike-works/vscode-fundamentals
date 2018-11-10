@@ -1053,10 +1053,10 @@
   resolved "https://registry.yarnpkg.com/@types/relateurl/-/relateurl-0.2.28.tgz#6bda7db8653fa62643f5ee69e9f69c11a392e3a6"
   integrity sha1-a9p9uGU/piZD9e5p6facEaOS46Y=
 
-"@types/sequelize@4.27.25":
-  version "4.27.25"
-  resolved "https://registry.yarnpkg.com/@types/sequelize/-/sequelize-4.27.25.tgz#df18658ccb195c375bf16a6828e50a16e710b2b2"
-  integrity sha512-wAoS4tz8MIS+4QfNWZKvO8gXBbwDhrI5PEpTUyTgwnR74M36/rGEVyugdK8KFj5IqamUJfFbAgnJ2Tw/16hKqw==
+"@types/sequelize@4.27.30":
+  version "4.27.30"
+  resolved "https://registry.yarnpkg.com/@types/sequelize/-/sequelize-4.27.30.tgz#ff4a154c24ba733ec7c344cfa318446b13217306"
+  integrity sha512-5DZCTnlLizi7Dk/sZ9ZWI3WxL1eUSH4Rpy5rie394GOIAYSYPBamexl1citj6ZgdbkaNXvJ+RuU1HmipUPA47w==
   dependencies:
     "@types/bluebird" "*"
     "@types/continuation-local-storage" "*"
@@ -7628,10 +7628,10 @@ send@0.16.2:
     range-parser "~1.2.0"
     statuses "~1.4.0"
 
-sequelize@4.41.0:
-  version "4.41.0"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.41.0.tgz#fa24ac0471e398090b55b302579240ed58e0b54a"
-  integrity sha512-6zCYxjPriUBgLQ5dN4ZxC5eadUtRu2tHFoBiSU9vNGb6G3f4bZM6vFpJu0DhxeeyhodTAXqY1GaBpZzT3PXB/Q==
+sequelize@4.41.1:
+  version "4.41.1"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.41.1.tgz#03dc3a1e675aeef5a4ee07d7a9206edce5800e5d"
+  integrity sha512-8LqFgM3SovWk+FOQDIJphUi7462dFIAUD4TUDKy1PU7tWve4x1p0PdeKOXUmDkqtBoHtj1neSsRNcoC2eE6uHQ==
   dependencies:
     bluebird "^3.5.0"
     cls-bluebird "^2.1.0"
