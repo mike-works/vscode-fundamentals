@@ -956,10 +956,10 @@
   resolved "https://registry.yarnpkg.com/@types/keygrip/-/keygrip-1.0.1.tgz#ff540462d2fb4d0a88441ceaf27d287b01c3d878"
   integrity sha1-/1QEYtL7TQqIRBzq8n0oewHD2Hg=
 
-"@types/koa-bodyparser@5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@types/koa-bodyparser/-/koa-bodyparser-5.0.1.tgz#c40c0a0b7903df128a4e0677c51b5bdcc8bfa025"
-  integrity sha512-nL9JGPAHTnFb7zDm9u0bdXEMsbTgCJWcyHJRRPTSCkErzDSyeuSum7IemS697NTpWDwQw+Y9d/CYzvWKlAsMRQ==
+"@types/koa-bodyparser@5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@types/koa-bodyparser/-/koa-bodyparser-5.0.2.tgz#bb9236a8f82576c2f9be7bed7914bcf95632fa18"
+  integrity sha512-prJC/gtxnurTTOpYkSwMwzbkiZ6BCW7arIvjmNVbEziauhcndQeCewzsSphmtlI6wnwFnGGAAOznQR1OYrhhgw==
   dependencies:
     "@types/koa" "*"
 
