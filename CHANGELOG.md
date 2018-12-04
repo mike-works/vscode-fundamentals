@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/mike-works/vscode-fundamentals/compare/v1.0.1...v1.0.2) (2018-12-04)
+
+
+### Bug Fixes
+
+* roll back [@types](https://github.com/types)/react ([204b0a2](https://github.com/mike-works/vscode-fundamentals/commit/204b0a2))
+
 ## [1.0.1](https://github.com/mike-works/vscode-fundamentals/compare/v1.0.0...v1.0.1) (2018-11-12)
 
 
