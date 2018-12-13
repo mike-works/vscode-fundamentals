@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/mike-works/vscode-fundamentals/compare/v1.0.2...v1.0.3) (2018-12-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sequelize to v4.42.0 ([287335f](https://github.com/mike-works/vscode-fundamentals/commit/287335f))
+
 ## [1.0.2](https://github.com/mike-works/vscode-fundamentals/compare/v1.0.1...v1.0.2) (2018-12-04)
 
 
