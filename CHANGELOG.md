@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/mike-works/vscode-fundamentals/compare/v1.0.3...v1.0.4) (2018-12-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency debug to v4.1.1 ([b6812eb](https://github.com/mike-works/vscode-fundamentals/commit/b6812eb))
+
 ## [1.0.3](https://github.com/mike-works/vscode-fundamentals/compare/v1.0.2...v1.0.3) (2018-12-13)
 
 
