@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/mike-works/vscode-fundamentals/compare/v1.0.4...v1.0.5) (2019-01-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sqlite3 to v4.0.6 ([fe8815f](https://github.com/mike-works/vscode-fundamentals/commit/fe8815f))
+
 ## [1.0.4](https://github.com/mike-works/vscode-fundamentals/compare/v1.0.3...v1.0.4) (2018-12-22)
 
 
