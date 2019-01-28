@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/mike-works/vscode-fundamentals/compare/v1.0.5...v1.0.6) (2019-01-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency koa to v2.7.0 ([6ab6f28](https://github.com/mike-works/vscode-fundamentals/commit/6ab6f28))
+
 ## [1.0.5](https://github.com/mike-works/vscode-fundamentals/compare/v1.0.4...v1.0.5) (2019-01-11)
 
 
