@@ -975,10 +975,10 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa-router@7.0.35":
-  version "7.0.35"
-  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.0.35.tgz#07442ac95e65ec1b042af4f72abea44dc96b909f"
-  integrity sha512-WSdZ0FkUSCDiGQBtsEAmTjsM3l5o4eq2WDSCR9UXm/buLY73b5MSkfSt4f8+LAhoZYa9uNNcEyiE43J0xISF5A==
+"@types/koa-router@7.0.39":
+  version "7.0.39"
+  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.0.39.tgz#6167930552e6686f7b5731aa4618cee44fec6a43"
+  integrity sha512-B8b2qyl7ijLFz7ocqkWva4IJ1n4uY5dK7jtGhQ+YHIGTpzcZr4ldDSjZi/xIM+ko3xSu8oqlGbzWxeVXK3WnNg==
   dependencies:
     "@types/koa" "*"
 
