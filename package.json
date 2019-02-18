@@ -80,7 +80,7 @@
     "tslint": "5.12.1",
     "tslint-microsoft-contrib": "6.0.0",
     "typescript": "3.3.3",
-    "webpack": "4.29.3",
+    "webpack": "4.29.5",
     "webpack-bundle-analyzer": "3.0.4",
     "webpack-cli": "3.2.3"
   },
