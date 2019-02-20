@@ -46,7 +46,7 @@
     "@mike-works/workshop-semantic-release-config": "1.0.0",
     "@types/commander": "2.12.2",
     "@types/csv-parse": "1.1.11",
-    "@types/debug": "4.1.0",
+    "@types/debug": "4.1.2",
     "@types/extract-text-webpack-plugin": "3.0.3",
     "@types/html-webpack-plugin": "3.2.0",
     "@types/koa": "2.0.48",
