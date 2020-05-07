@@ -916,10 +916,10 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
-"@types/extract-text-webpack-plugin@3.0.3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@types/extract-text-webpack-plugin/-/extract-text-webpack-plugin-3.0.3.tgz#b4ef831c7ea7bc0585ccabc61e8b0d6cd69fccc3"
-  integrity sha512-KvRd5e5k+BVwWBlCm4uZFcV+M2mikKhORahruKxPkriFIDhG6b0fZ8PIYyiok+pk6W5bqFCsQmRk5D86pTmNpA==
+"@types/extract-text-webpack-plugin@3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@types/extract-text-webpack-plugin/-/extract-text-webpack-plugin-3.0.4.tgz#ab36e6be85695ca900c1c7f387e4dc5cf19a0308"
+  integrity sha512-rQv2FShQnpsCnZAHEqmvTECvFmqSL6xTJttf+hMJvNoEIUZLjeLygIbrBimj9R4kwwc0AhU+JBJVz5/qcd5hmg==
   dependencies:
     "@types/webpack" "*"
 
