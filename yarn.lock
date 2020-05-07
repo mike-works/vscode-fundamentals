@@ -1010,10 +1010,10 @@
     "@types/koa-compose" "*"
     "@types/node" "*"
 
-"@types/koa@2.0.48":
-  version "2.0.48"
-  resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.0.48.tgz#29162783029d3e5df8b58c55f6bf0d35f78fc39f"
-  integrity sha512-CiIUYhHlOFJhSCTmsFoFkV2t9ij1JwW26nt0W9XZoWTvmAw6zTE0+k3IAoGICtjzIfhZpZcO323NHmI1LGmdDw==
+"@types/koa@2.0.52":
+  version "2.0.52"
+  resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.0.52.tgz#7dd11de4189ab339ad66c4ccad153716b14e525f"
+  integrity sha512-cp/GTOhOYwomlSKqEoG0kaVEVJEzP4ojYmfa7EKaGkmkkRwJ4B/1VBLbQZ49Z+WJNvzXejQB/9GIKqMo9XLgFQ==
   dependencies:
     "@types/accepts" "*"
     "@types/cookies" "*"
