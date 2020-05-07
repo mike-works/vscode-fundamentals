@@ -48,7 +48,7 @@
     "@types/csv-parse": "1.1.11",
     "@types/debug": "4.1.0",
     "@types/extract-text-webpack-plugin": "3.0.3",
-    "@types/html-webpack-plugin": "3.2.0",
+    "@types/html-webpack-plugin": "3.2.2",
     "@types/koa": "2.0.48",
     "@types/koa-bodyparser": "5.0.2",
     "@types/koa-mount": "3.0.1",
