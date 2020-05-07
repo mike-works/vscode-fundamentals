@@ -49,7 +49,7 @@
     "@types/debug": "4.1.0",
     "@types/extract-text-webpack-plugin": "3.0.4",
     "@types/html-webpack-plugin": "3.2.2",
-    "@types/koa": "2.0.48",
+    "@types/koa": "2.0.52",
     "@types/koa-bodyparser": "5.0.2",
     "@types/koa-mount": "3.0.1",
     "@types/koa-router": "7.0.39",
