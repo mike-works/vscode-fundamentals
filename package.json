@@ -36,7 +36,7 @@
     "koa": "2.7.0",
     "koa-bodyparser": "4.2.1",
     "koa-mount": "4.0.0",
-    "koa-router": "7.4.0",
+    "koa-router": "8.0.8",
     "koa-static": "5.0.0",
     "sequelize": "4.42.0",
     "sqlite3": "4.0.9"
