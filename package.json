@@ -39,7 +39,7 @@
     "koa-router": "7.4.0",
     "koa-static": "5.0.0",
     "sequelize": "4.42.0",
-    "sqlite3": "4.0.9"
+    "sqlite3": "4.2.0"
   },
   "devDependencies": {
     "@mike-works/js-lib-renovate-config": "2.0.0",
