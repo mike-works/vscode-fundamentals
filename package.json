@@ -67,7 +67,7 @@
     "koa-webpack-middleware": "1.0.7",
     "muicss": "0.10.2",
     "node-sass": "4.14.1",
-    "nodemon": "1.18.11",
+    "nodemon": "1.19.4",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-test-renderer": "16.8.6",
