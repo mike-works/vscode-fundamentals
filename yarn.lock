@@ -1099,10 +1099,10 @@
   resolved "https://registry.yarnpkg.com/@types/relateurl/-/relateurl-0.2.28.tgz#6bda7db8653fa62643f5ee69e9f69c11a392e3a6"
   integrity sha1-a9p9uGU/piZD9e5p6facEaOS46Y=
 
-"@types/sequelize@4.27.49":
-  version "4.27.49"
-  resolved "https://registry.yarnpkg.com/@types/sequelize/-/sequelize-4.27.49.tgz#f110db2a3c533971e051c3f5f106656dfdf34cd0"
-  integrity sha512-l+giWSYELBg7uJUtYWYrgn5+FIrvVPzX9QiRayfkh85gGGtVHMy/C0jbl3qdZoQc1c1GVB3l4MDnJy8eZ9spKQ==
+"@types/sequelize@4.28.8":
+  version "4.28.8"
+  resolved "https://registry.yarnpkg.com/@types/sequelize/-/sequelize-4.28.8.tgz#e97b5745d25c12881b348533c1d9e750adf8278b"
+  integrity sha512-3n/iSpOtO5NynSBgEJ+738DK/ctxkqnVMvdPLZxrbZrf/rQgNm8wgDPDSarS1rmluvOe5ZMRDF8DXhts5MIbag==
   dependencies:
     "@types/bluebird" "*"
     "@types/continuation-local-storage" "*"
