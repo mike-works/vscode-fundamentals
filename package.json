@@ -57,7 +57,7 @@
     "@types/react": "16.9.49",
     "@types/react-dom": "16.9.8",
     "@types/sequelize": "4.28.9",
-    "@types/webpack": "4.41.21",
+    "@types/webpack": "4.41.22",
     "@types/webpack-bundle-analyzer": "2.13.3",
     "awesome-typescript-loader": "5.2.1",
     "css-loader": "2.1.1",
