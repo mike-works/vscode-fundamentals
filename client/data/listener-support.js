@@ -7,12 +7,12 @@ export default class ListenerSupport {
   constructor() {
     this._listeners = [];
   }
-  
+
   /**
    * Register a listener
    * @return {void}
    */
-  register(listener) {
+  registerListener(listener) {
     this._listeners.push(listener);
   }
 
@@ -20,14 +20,14 @@ export default class ListenerSupport {
    * Un-register a listener
    * @return {void}
    */
-  unregister(listener) {
+  unregisterListener(listener) {
     let idx = this._listeners.findIndex((x) => x === listener);
     this._listeners.splice(idx, 1);
   }
 
   /**
    * Fire an event, synchronously invoking all listener callbacks that have been registered
-   * @see #register 
+   * @see #register
    */
   fire(payload) {
     this._listeners.forEach((x) => x(payload));
@@ -38,9 +38,9 @@ let invoice = [];
 invoice.push({
   qty: 2,
   item: {
-    name: 'Apple',
-    price: 1.32
-  }
+    name: "Apple",
+    price: 1.32,
+  },
 });
 
-invoice.push({bad: 'thing'});
+invoice.push({ bad: "thing" });
