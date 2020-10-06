@@ -30,7 +30,7 @@ export default class ListenerSupport {
    * @see #register
    */
   fire(payload) {
-    this._listeners.forEach((x) => x(payload));
+    this._listeners.forEach((x) => x(payload.data));
   }
 }
 

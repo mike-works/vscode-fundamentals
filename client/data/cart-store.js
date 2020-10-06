@@ -162,6 +162,6 @@ export default class CartStore {
    * @private
    */
   _onItemsUpdated() {
-    this.itemListeners.fire(this.items);
+    this.itemListeners.fire({ data: this.items });
   }
 }
