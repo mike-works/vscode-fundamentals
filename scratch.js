@@ -1,6 +1,6 @@
 // @ts-check
+/** @type {number} */
+let value;
 
-let x = 15;
-
-x = 21;
-x = "157";
+value = 21;
+value = "21";
