@@ -2,6 +2,10 @@ import ListenerSupport from "./listener-support";
 import { endpoint as API_ENDPOINT } from "../utils/api";
 
 /**
+ * @typedef {Object} GroceryItem
+ */
+
+/**
  * A class for keeping track of grocery item state
  * @public
  */
@@ -13,6 +17,8 @@ export default class GroceryItemStore {
    */
   constructor() {
     // restore items to get their initial state
+
+    // @ts-ignore
     this._items = [];
     this._restoreItems().then((restoredItems) => {
       this._items = restoredItems;
@@ -77,15 +83,18 @@ export default class GroceryItemStore {
    * and update existing ones to reflect any changes in properties
    *
    * @private
-   * @param {any} data array of grocery items to push into the store
+   * @param {GroceryItem[]} data array of grocery items to push into the store
    * @return {void}
    */
   _updateItems(data) {
     let itemHash = {};
     this._items.forEach((i) => {
+      // @ts-ignore
       itemHash[i.id] = i;
     });
+    // @ts-ignore
     data.forEach((dataItem) => (itemHash[dataItem.id] = dataItem));
+    // @ts-ignore
     this._items = Object.keys(itemHash).map((k) => itemHash[k]);
   }
 
@@ -126,8 +135,10 @@ export default class GroceryItemStore {
     return fetch(`${API_ENDPOINT}api/grocery/categories`)
       .then((resp) => resp.json())
       .then((jsonData) => {
-        let categories = jsonData.data.map((item) => item.category);
-        this._categories = categories;
+        /** @type {{category: string}[]} */
+        let categories = jsonData.data;
+        let categoryNames = categories.map((item) => item.category);
+        this._categories = categoryNames;
         this._onCategoriesUpdated();
         return this.categories;
       })

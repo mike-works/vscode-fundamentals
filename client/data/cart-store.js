@@ -2,6 +2,10 @@ import ListenerSupport from "./listener-support";
 import { endpoint as API_ENDPOINT } from "../utils/api";
 
 /**
+ * @typedef {Object} CartItem
+ */
+
+/**
  * A class for keeing track of shopping cart state
  * @public
  */
@@ -13,6 +17,7 @@ export default class CartStore {
    * @public
    */
   constructor() {
+    /** @type {CartItem[]} */
     this._items = []; // Items currently in the cart
     /**
      * Create a ListenerSupport instance, that we can register listeners to
