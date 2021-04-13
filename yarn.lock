@@ -933,12 +933,12 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
-"@types/extract-text-webpack-plugin@3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@types/extract-text-webpack-plugin/-/extract-text-webpack-plugin-3.0.4.tgz#ab36e6be85695ca900c1c7f387e4dc5cf19a0308"
-  integrity sha512-rQv2FShQnpsCnZAHEqmvTECvFmqSL6xTJttf+hMJvNoEIUZLjeLygIbrBimj9R4kwwc0AhU+JBJVz5/qcd5hmg==
+"@types/extract-text-webpack-plugin@3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@types/extract-text-webpack-plugin/-/extract-text-webpack-plugin-3.0.5.tgz#1b65f1913382225bb6f798b2c103175a7065560d"
+  integrity sha512-TH021cSbocn+1rfP3Bw6jJi3vcmgHMcQMSkXseIzwGU95qA1Nu7iEpzkHdpM4rBvxFzdeVuRgv+Nv7Ayx/K4qg==
   dependencies:
-    "@types/webpack" "*"
+    "@types/webpack" "^4"
 
 "@types/geojson@^1.0.0":
   version "1.0.6"
