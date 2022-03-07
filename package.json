@@ -71,7 +71,7 @@
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-test-renderer": "16.14.0",
-    "sass-loader": "7.3.1",
+    "sass-loader": "12.6.0",
     "semantic-release": "15.14.0",
     "source-map-loader": "0.2.4",
     "style-loader": "0.23.1",
