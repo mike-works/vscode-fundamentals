@@ -57,7 +57,7 @@
     "@types/react": "16.14.11",
     "@types/react-dom": "16.9.14",
     "@types/sequelize": "4.28.10",
-    "@types/webpack": "4.41.30",
+    "@types/webpack": "5.28.5",
     "@types/webpack-bundle-analyzer": "3.9.4",
     "awesome-typescript-loader": "5.2.1",
     "css-loader": "2.1.1",
@@ -80,7 +80,7 @@
     "tslint": "5.12.1",
     "tslint-microsoft-contrib": "6.2.0",
     "typescript": "3.3.4000",
-    "webpack": "4.46.0",
+    "webpack": "5.95.0",
     "webpack-bundle-analyzer": "3.9.0",
     "webpack-cli": "3.3.12"
   },
