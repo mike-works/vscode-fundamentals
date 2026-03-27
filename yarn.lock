@@ -1034,10 +1034,10 @@
     "@types/koa-compose" "*"
     "@types/node" "*"
 
-"@types/koa@2.13.4":
-  version "2.13.4"
-  resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.13.4.tgz#10620b3f24a8027ef5cbae88b393d1b31205726b"
-  integrity sha512-dfHYMfU+z/vKtQB7NUrthdAEiSvnLebvBjwHtfFmpZmB7em2N3WVQdHgnFq+xvyVgxW5jKDmjWfLD3lw4g4uTw==
+"@types/koa@2.13.12":
+  version "2.13.12"
+  resolved "https://registry.yarnpkg.com/@types/koa/-/koa-2.13.12.tgz#70d87a9061a81909e0ee11ca50168416e8d3e795"
+  integrity sha512-vAo1KuDSYWFDB4Cs80CHvfmzSQWeUb909aQib0C0aFx4sw0K9UZFz2m5jaEP+b3X1+yr904iQiruS0hXi31jbw==
   dependencies:
     "@types/accepts" "*"
     "@types/content-disposition" "*"
