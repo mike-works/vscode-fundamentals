@@ -999,10 +999,10 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa-router@7.4.4":
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.4.4.tgz#db72bde3616365d74f00178d5f243c4fce7da572"
-  integrity sha512-3dHlZ6CkhgcWeF6wafEUvyyqjWYfKmev3vy1PtOmr0mBc3wpXPU5E8fBBd4YQo5bRpHPfmwC5yDaX7s4jhIN6A==
+"@types/koa-router@7.4.9":
+  version "7.4.9"
+  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.4.9.tgz#ba19e2b5d8a76d2bd9ed979011c85309006ae500"
+  integrity sha512-YibkqJrFWwwF55YtZo6dORpMj/1zfweHHIZA/qpA+2JPcVbBopAvLjejTcO1ojWAJfzf1tPC+CrPnLDuVRkUEA==
   dependencies:
     "@types/koa" "*"
 
