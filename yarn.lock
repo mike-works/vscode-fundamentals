@@ -1013,10 +1013,10 @@
   dependencies:
     "@types/koa" "*"
 
-"@types/koa-static@4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@types/koa-static/-/koa-static-4.0.2.tgz#a199d2d64d2930755eb3ea370aeaf2cb6f501d67"
-  integrity sha512-ns/zHg+K6XVPMuohjpOlpkR1WLa4VJ9czgUP9bxkCDn0JZBtUWbD/wKDZzPGDclkQK1bpAEScufCHOy8cbfL0w==
+"@types/koa-static@4.0.4":
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@types/koa-static/-/koa-static-4.0.4.tgz#ce6f2a5d14cc7ef19f9bf6ee8e4f3eadfcc77323"
+  integrity sha512-j1AUzzl7eJYEk9g01hNTlhmipFh8RFbOQmaMNLvLcNNAkPw0bdTs3XTa3V045XFlrWN0QYnblbDJv2RzawTn6A==
   dependencies:
     "@types/koa" "*"
     "@types/koa-send" "*"
