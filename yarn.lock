@@ -992,10 +992,10 @@
   resolved "https://registry.yarnpkg.com/@types/koa-compose/-/koa-compose-3.2.2.tgz#dc106e000bbf92a3ac900f756df47344887ee847"
   integrity sha1-3BBuAAu/kqOskA91bfRzRIh+6Ec=
 
-"@types/koa-mount@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@types/koa-mount/-/koa-mount-3.0.1.tgz#2c068d1696b173c62c316158210c4316c4401f57"
-  integrity sha512-SkAE5yjrbJCeRoeU2mxQsopskcIMksQ4GXIHEaK87XRUHDESLtUpsfOdiCQOtYGiNXVljR/LzWYBq+r6BIW/dw==
+"@types/koa-mount@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@types/koa-mount/-/koa-mount-4.0.5.tgz#63f99d513a78dc9f13fb9a2dab75d9ff4a2050cf"
+  integrity sha512-pV1njJ7r94iqAFzT9D5sGSYKUHFGudCLAnmr4WFli7V5tJf5MAgRQK9leTPJ4gjvgr+hnTf86fZsKoFN358c7w==
   dependencies:
     "@types/koa" "*"
 
@@ -5350,10 +5350,10 @@ koa-convert@^2.0.0:
     co "^4.6.0"
     koa-compose "^4.1.0"
 
-koa-mount@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/koa-mount/-/koa-mount-4.0.0.tgz#e0265e58198e1a14ef889514c607254ff386329c"
-  integrity sha512-rm71jaA/P+6HeCpoRhmCv8KVBIi0tfGuO/dMKicbQnQW/YJntJ6MnnspkodoA4QstMVEZArsCphmd0bJEtoMjQ==
+koa-mount@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/koa-mount/-/koa-mount-4.2.0.tgz#66f4436cac76af3075ac432d503299f7678d5914"
+  integrity sha512-2iHQc7vbA9qLeVq5gKAYh3m5DOMMlMfIKjW/REPAS18Mf63daCJHHVXY9nbu7ivrnYn5PiPC4CE523Tf5qvjeQ==
   dependencies:
     debug "^4.0.1"
     koa-compose "^4.1.0"
