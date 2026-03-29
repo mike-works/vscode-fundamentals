@@ -898,12 +898,12 @@
     "@types/keygrip" "*"
     "@types/node" "*"
 
-"@types/csv-parse@1.1.12":
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/@types/csv-parse/-/csv-parse-1.1.12.tgz#b1ae62fc0334821f45595e62ca683da9a760915e"
-  integrity sha512-p6uZznjJOcFaymduLYf45ik28IYzChnkt+ofJOWa16bb2JRCHdxs/ai03q6raizCc5JuunVsbgtlDxfu9y2Nag==
+"@types/csv-parse@1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@types/csv-parse/-/csv-parse-1.2.5.tgz#56004bd3248ace0e4a1fe3cb06cb507e9599b21c"
+  integrity sha512-3PoFyWeuFGqale09vFydLQ6IGdvD+mizcXcB8s6ImWv+830IF0HckvewgcGVfGnTFImqvfvhpYZYod2QqGGGdg==
   dependencies:
-    "@types/node" "*"
+    csv-parse "*"
 
 "@types/debug@4.1.13":
   version "4.1.13"
@@ -2949,6 +2949,11 @@ csstype@^3.2.2:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.2.3.tgz#ec48c0f3e993e50648c86da559e2610995cf989a"
   integrity sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==
+
+csv-parse@*:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-6.2.1.tgz#325c5adb126b1ad07fa68077c3dc739ccfc12cf5"
+  integrity sha512-LRLMV+UCyfMokp8Wb411duBf1gaBKJfOfBWU9eHMJ+b+cJYZsNu3AFmjJf3+yPGd59Exz1TsMjaSFyxnYB9+IQ==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
