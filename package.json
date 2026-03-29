@@ -32,7 +32,7 @@
   "dependencies": {
     "babel-runtime": "6.26.0",
     "commander": "2.20.3",
-    "debug": "4.3.2",
+    "debug": "4.3.7",
     "koa": "2.16.2",
     "koa-bodyparser": "4.3.0",
     "koa-mount": "4.0.0",
